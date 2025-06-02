@@ -1,4 +1,26 @@
+/* Mobile responsiveness */
 @media (max-width: 768px) {
+    .menu-btn {
+        width: 6%;
+        height: 5%;
+        top: 7px;
+        left: 7px
+    }
+
+    .side-nav {
+        width: 100%;
+        left: -100%;
+    }
+
+    .side-nav {
+        width: 100%;
+        left: -100%;
+    }
+    
+    .side-nav.active {
+        left: 0;
+    }
+
     .pagination-controls {
         width: 100%;
         flex-direction: column;
@@ -43,6 +65,41 @@
     
     .page-title-text {
         color: #ffffff;
+    }
+
+    .menu-btn {
+        background-color: #7a79e0;
+    }
+    
+    .menu-btn:hover {
+        background-color: #6968d1;
+    }
+    
+    .side-nav {
+        background-color: #2a2a2a;
+        border-right: 1px solid #444;
+    }
+    
+    .side-nav-header {
+        border-bottom-color: #444;
+    }
+    
+    .close-btn {
+        color: #ccc;
+    }
+    
+    .close-btn:hover {
+        background-color: #444;
+    }
+    
+    .nav-item {
+        color: #e0e0e0;
+        border-bottom-color: #333;
+    }
+    
+    .nav-item:hover {
+        background-color: #333;
+        color: #7a79e0;
     }
     
     #search_input {
