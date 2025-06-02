@@ -1,0 +1,67 @@
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+	background: black;
+    }
+
+    #main_search_button {
+	background: #55d;
+    }
+
+    #main_search_button:hover {
+	background: #66e;
+    }
+
+    .website-icon i {
+	color: black;
+    }
+
+    .search-section {
+	background: #ccc;
+    }
+
+    .action-button {
+	background: black;
+	border-color: white;
+    }
+
+    .action-button:hover {
+        background: #555;
+        color: white;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.5rem;
+    }
+            
+    .title-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+            
+    .search-section {
+	padding: 30px 20px;
+    }
+            
+    .website-icon {
+	width: 50px;
+	height: 50px;
+    }
+            
+    .website-icon i {
+	font-size: 25px;
+    }
+}
+        
+@media (max-width: 576px) {
+    .main-title {
+	font-size: 2rem;
+    }
+            
+    .search-section {
+	padding: 25px 15px;
+    }
+}
