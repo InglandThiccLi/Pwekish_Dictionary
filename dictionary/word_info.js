@@ -3,15 +3,18 @@ let original_scroll = 0;
 function showWordDetail(word) {
     // Hide pagination controls
     $('.pagination-controls').addClass('hidden');
+
+    // Make the results-container taller
+    $('.results-container').addClass('higher');
 	
-	// Store the original scroll position of results-container
-	original_scroll = $('.results-container').scrollTop();
+    // Store the original scroll position of results-container
+    original_scroll = $('.results-container').scrollTop();
     
     // Generate detailed view HTML
     const detailHtml = generateWordDetailHtml(word);
 	
-	// Go to top for results-container
-	$('.results-container').scrollTop(0);
+    // Go to top for results-container
+    $('.results-container').scrollTop(0);
     
     // Show detailed view
     $('#result').html(detailHtml);
@@ -161,12 +164,15 @@ function generateBentolTable(data, col1Header, col2Header) {
 function returnToSearchResults() {
     // Show pagination controls
     $('.pagination-controls').removeClass('hidden');
+
+    // Set back the height of results-container
+    $('.results-container').removeClass('higher');
     
     // Return to current page view
     displayCurrentPage();
 	
-	// Set back the scroll position for results-container
-	$('.results-container').scrollTop(original_scroll);
+    // Set back the scroll position for results-container
+    $('.results-container').scrollTop(original_scroll);
 }
 
 // Handle word entry clicks
