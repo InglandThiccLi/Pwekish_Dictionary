@@ -1,9 +1,17 @@
+let original_scroll = 0;
+
 function showWordDetail(word) {
     // Hide pagination controls
     $('.pagination-controls').addClass('hidden');
+	
+	// Store the original scroll position of results-container
+	original_scroll = $('.results-container').scrollTop();
     
     // Generate detailed view HTML
     const detailHtml = generateWordDetailHtml(word);
+	
+	// Go to top for results-container
+	$('.results-container').scrollTop(0);
     
     // Show detailed view
     $('#result').html(detailHtml);
@@ -156,6 +164,9 @@ function returnToSearchResults() {
     
     // Return to current page view
     displayCurrentPage();
+	
+	// Set back the scroll position for results-container
+	$('.results-container').scrollTop(original_scroll);
 }
 
 // Handle word entry clicks
