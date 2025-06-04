@@ -1,0 +1,64 @@
+/* Background */
+.background-image {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('background.png');
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.background-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Title */
+.page-title {
+    text-shadow: 2px 2px 2px white;
+}
+
+
+/* Article */
+.article-container {
+    margin: 0% 2%;
+}
+
+.article-passage {
+    margin-bottom: 2%;
+}
+
+.article-passage > p {
+    text-indent: 50px;
+    font-size: 20px;
+}
+
+.article-passage > h3 {
+    text-shadow: 2px 2px 2px white;
+}
+
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .background-image::after {
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .page-title {
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .article-passage > h3 {
+        text-shadow: 2px 2px 2px black;
+    }
+}

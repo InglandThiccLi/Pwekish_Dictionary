@@ -1,0 +1,123 @@
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+	.overlay-background {
+		width: 85%;
+		height: 85%;
+	}
+	
+    .pagination-controls {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 5px !important;
+        margin-bottom: 0px !important;
+    }
+    
+    .entries-per-page, .page-navigation {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .results-container {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .word-entry {
+        flex-direction: row;
+    }
+
+    .word-pronunciations-preview {
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    
+    .word-term, .word-meaning {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    #search_input {
+        background-color: #333;
+        color: #e0e0e0;
+        border-color: #555;
+    }
+	
+	.tutorial-btn > i {
+		color: white;
+	}
+
+    .entries-btn.active {
+        background-color: #7a79e0;
+        border-color: #7a79e0;
+    }
+    
+    .results-container, .overlay-background {
+        background-color: #2a2a2a;
+        border-color: #444;
+        scrollbar-color: #666 #2a2a2a; /* For Firefox */
+    }
+    
+    .results-container::-webkit-scrollbar-track {
+        background: #2a2a2a;
+    }
+    
+    .results-container::-webkit-scrollbar-thumb {
+        background-color: #666;
+    }
+    
+    .word-entry {
+        background-color: #333;
+    }
+
+    .word-pronunciations-preview {
+        color: #bbbbbb;
+    }
+    
+    .word-term {
+        color: #ffffff;
+    }
+    
+    .status-message {
+        color: #aaa;
+    }
+
+    .word-entry:hover {
+        background-color: #444;
+    }
+
+    .word-detail-title {
+        color: white;
+    }
+
+    .word-section-title {
+        color: white;
+    }
+    
+    .word-pronunciations,
+    .language-origin {
+        color: #aaa;
+    }
+    
+    .word-table th {
+        background-color: #444;
+    }
+    
+    .word-table th,
+    .word-table td {
+        border-color: #555;
+    }
+    
+    .return-btn-container {
+        border-top-color: #555;
+    }
+}
+
+.higher {
+    height: 550px;
+}

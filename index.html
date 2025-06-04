@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pwekish Dictionary</title>
     <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="common/favicon.ico">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,10 +14,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="style.css" rel="stylesheet">
-    <link href="extra_style.css" rel="stylesheet">
+    <link href="home/style.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Background image -->
+    <div class="background-image"></div>
+    
     <div class="main-container">
         <!-- Title Section -->
         <div class="title-section">
@@ -28,6 +30,60 @@
                 <h1 class="main-title">Pwekish Dictionary</h1>
             </div>
         </div>
+		
+		<!-- Overlay for update information -->
+        <div id="overlay" class="overlay">
+			<div class="overlay-background">
+				<div class="overlay-header">
+					<h2 class="overlay-title">What's New</h2>
+					<button id="close-button" class="close-btn">
+						<i class="fa-solid fa-xmark"></i>
+					</button>
+				</div>
+				<div class="overlay-content">
+					<ul>
+						<li>
+							v1.1 (2025-06-04):
+							<ol>
+								<li>
+									[NEW] Add about page.
+								</li>
+								<li>
+									[NEW] Add this update overlay.
+								</li>
+								<li>
+									[NEW] Add tutorial on the search page.
+								</li>
+                                <li>
+									[NEW] Add a background image for the home page.
+								</li>
+								<li>
+									[CHANGE] Hide unused buttons on home page and navigation.
+								</li>
+								<li>
+									[BUG] Fix bug that "Á","É","Í","Ó","Ú","Ñ","ñ","Ņ","ņ" cannot be used for searching.
+								</li>
+								<li>
+									[BUG] Fix bug that entering "`" or "'" would cause data fetching error.
+								</li>
+								<li>
+									[BUG] Fix bug that entering non-existing word with advanced search would cause data fetching error.
+								</li>
+							</ol>
+						</li>
+						<br>
+						<li>
+							v1.01 (2025-06-02): [NEW] Add side navigation.
+						</li>
+						<br>
+						<li>
+							
+							v1.0 (2025-06-02): [NEW] Publish the website on GitHub.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
         
         <!-- Search Section -->
         <div class="search-section">
@@ -50,19 +106,21 @@
         <div class="buttons-section">
             <div class="row g-3">
                 <div class="col-lg col-md-6 col-12">
-                    <button class="action-button">Grammar</button>
+					<a href="articles/about.html">
+						<button class="action-button">About</button>
+					</a>
+                </div>
+                <div class="col-lg col-md-6 col-12 hidden">
+                    <button class="action-button">Learn</button>
+                </div>
+                <div class="col-lg col-md-6 col-12 hidden">
+                    <button class="action-button">More Info</button>
+                </div>
+                <div class="col-lg col-md-6 col-12 hidden">
+                    <button class="action-button">Books</button>
                 </div>
                 <div class="col-lg col-md-6 col-12">
-                    <button class="action-button">Affixes</button>
-                </div>
-                <div class="col-lg col-md-6 col-12">
-                    <button class="action-button">Idioms</button>
-                </div>
-                <div class="col-lg col-md-6 col-12">
-                    <button class="action-button">Handzis</button>
-                </div>
-                <div class="col-lg col-md-6 col-12">
-                    <button class="action-button">Chemistry</button>
+                    <button id="update-button" class="action-button">Updates</button>
                 </div>
             </div>
         </div>
@@ -75,6 +133,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- JavaScript -->
-    <script src="search.js"></script>
+    <script src="home/search.js"></script>
+	<script src="home/update.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <title>Pwekish Dictionary - Search</title>
 
     <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../common/favicon.ico">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,8 +18,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- Styles -->
-    <link href="style.css" rel="stylesheet">
-    <link href="extra_style.css" rel="stylesheet">
+    <link href="search/style.css" rel="stylesheet">
+    <link href="search/extra_style.css" rel="stylesheet">
+	<link href="../common/style.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -42,6 +43,7 @@
         <!-- Side navigation -->
         <nav id="sideNav" class="side-nav">
             <div class="side-nav-header">
+				<h2 class="side-nav-title">Navigation</h2>
                 <button id="closeBtn" class="close-btn">
                     <i class="bi bi-x-lg"></i>
                 </button>
@@ -51,32 +53,112 @@
                     <i class="bi bi-house"></i>
                     <span>Home</span>
                 </a>
-                <a href="../grammar/home.html" class="nav-item">
+				<a href="../articles/about.html" class="nav-item">
+                    <i class="bi bi-question-circle"></i>
+                    <span>About</span>
+                </a>
+                <a href="../learn/home.html" class="nav-item hidden">
                     <i class="bi bi-book"></i>
-                    <span>Grammar</span>
+                    <span>Learn</span>
                 </a>
-                <a href="affixes.html" class="nav-item">
+                <a href="index.html" class="nav-item hidden">
                     <i class="bi bi-plus-circle"></i>
-                    <span>Affixes</span>
+                    <span>More Info</span>
                 </a>
-                <a href="idioms.html" class="nav-item">
-                    <i class="bi bi-chat-quote"></i>
-                    <span>Idioms</span>
-                </a>
-                <a href="handzis.html" class="nav-item">
-                    <i class="bi bi-translate"></i>
-                    <span>Handzis</span>
-                </a>
-                <a href="../chemistry/home.html" class="nav-item">
-                    <i class="bi bi-flask-florence">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flask" viewBox="0 0 16 16">
-                            <path d="M4.5 0a.5.5 0 0 0 0 1H5v5.36L.503 13.717A1.5 1.5 0 0 0 1.783 16h12.434a1.5 1.5 0 0 0 1.28-2.282L11 6.359V1h.5a.5.5 0 0 0 0-1zM10 2H9a.5.5 0 0 0 0 1h1v1H9a.5.5 0 0 0 0 1h1v1H9a.5.5 0 0 0 0 1h1.22l.61 1H10a.5.5 0 1 0 0 1h1.442l.611 1H11a.5.5 0 1 0 0 1h1.664l.611 1H12a.5.5 0 1 0 0 1h1.886l.758 1.24a.5.5 0 0 1-.427.76H1.783a.5.5 0 0 1-.427-.76l4.57-7.48A.5.5 0 0 0 6 6.5V1h4z"/>
-                        </svg>
-                    </i>
-                    <span>Chemistry</span>
+				<a href="../books/home.html" class="nav-item hidden">
+                    <i class="bi bi-journals"></i>
+                    <span>Books</span>
                 </a>
             </div>
         </nav>
+		
+		<!-- Overlay for tutorial-->
+        <div id="tutorial-overlay" class="overlay">
+			<div class="overlay-background">
+				<div class="overlay-header">
+					<h2 class="overlay-title">Tutorial</h2>
+					<button id="close-button" class="close-btn">
+						<i class="bi bi-x-circle-fill"></i>
+					</button>
+				</div>
+				<div class="overlay-content">
+					<h5>General Tips</h5>
+					<ol>
+						<li>
+							Enter the Pwekish term or English meaning (only for advanced search).
+						</li>
+						<li>
+							Click the search button or press "ENTER" to search.
+						</li>
+						<li>
+							After loading, you will see the result in the box below.
+						</li>
+						<li>
+							Click the word entry to view the details.
+						</li>
+						<li>
+							If you cannot perform search, please ensure that your input contains only:
+							<ul>
+								<li>
+									English characters (A-Z and a-z)
+								</li>
+								<li>
+									"SPACE"
+								</li>
+								<li>
+									"á","é","í","ó","ú","Á","É","Í","Ó","Ú"
+								</li>
+								<li>
+									"Ñ","ñ","Ņ","ņ","`","'"
+								</li>
+							</ul>
+						</li>
+						<li>
+							To facilitate searching of verbs, please enter the to-infinitive form (e.g. to eat).
+						</li>
+					</ol>
+					<h5>Pagination</h5>
+					<ol>
+						<li>
+							You can adjust the number of entries shown by setting the "show number" at the bottom-left of the results.
+						</li>
+						<li>
+							You can turn to different page by clicking the buttons at the bottom-right of the results.
+						</li>
+					</ol>
+					<h5>Simple Search</h5>
+					<ol>
+						<li>
+							Enabled when the "Advanced Search" checkbox is not checked.
+						</li>
+						<li>
+							Simple search does not allow you to search by English meaning.
+						</li>
+						<li>
+							Plus, the search only gives you words which start with the first letter of your input.
+						</li>
+						<li>
+							This search mode is faster.
+						</li>
+					</ol>
+					<h5>Advanced Search</h5>
+					<ol>
+						<li>
+							Enabled when the "Advanced Search" checkbox is checked.
+						</li>
+						<li>
+							Advanced search allows you to search by English meaning.
+						</li>
+						<li>
+							It also allows you to find any words that match your input.
+						</li>
+						<li>
+							This search mode is slower.
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
         
         <!-- Search Bar -->
         <div class="row justify-content-center">
@@ -94,6 +176,9 @@
                             <label for="advanced_search_checkbox" >Advanced Search</label>
                             <input class="form-check-input" type="checkbox" id="advanced_search_checkbox">
                         </div>
+						<button id="tutorial-button" class="tutorial-btn">
+							<i class="bi bi-question-circle-fill"></i>
+						</button>
                     </div>
                 </div>
             </div>
@@ -141,10 +226,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
     <!-- Scripts -->
-    <script src="navigation.js"></script>
-    <script src="search.js"></script>
-    <script src="pagination.js"></script>
-    <script src="word_info.js"></script>
+    <script src="../common/navigation.js"></script>
+    <script src="search/search.js"></script>
+	<script src="search/tutorial.js"></script>
+    <script src="search/pagination.js"></script>
+    <script src="search/word_info.js"></script>
 
 </body>
 </html>
