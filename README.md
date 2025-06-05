@@ -15,6 +15,7 @@ https://inglopedia.fandom.com/wiki/Inglopedia_Wiki
 - Other features will be available soon.
 
 ## Updates
+- v1.1.1 (2025-06-05): Refine texts in the about page.
 - v1.1 (2025-06-04): 
 	1. Add about page.
 	2. Add update pop-up.
@@ -22,5 +23,5 @@ https://inglopedia.fandom.com/wiki/Inglopedia_Wiki
 	4. Add background image for the home page.
 	5. Hide unused buttons on home page and navigation.
 	6. Bug fixes on word searching system.
-- v1.01 (2025-06-02): Add side navigation.
+- v1.0.1 (2025-06-02): Add side navigation.
 - v1.0 (2025-06-02): Publish the website on GitHub.
