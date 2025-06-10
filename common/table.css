@@ -1,0 +1,136 @@
+.table {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Pwekish;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+	margin: 20px 0;
+}
+
+@font-face {
+    font-family: 'Pwekish';
+    src: url('pwekish.ttf');
+}
+
+.card-header .btn-link {
+    color: inherit !important;
+}
+
+.card-header .btn-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.collapsible-table-btn-icon,
+.collapsible-table-btn-text {
+	color: #f38630;
+}
+
+.table-header {
+	background: linear-gradient(135deg, #f38630 0%, #f8a102 100%);
+	color: white;
+	font-weight: 600;
+	text-align: center;
+	vertical-align: middle;
+	border: none;
+	font-size: 20px;
+}
+
+.table-subheader {
+	background: linear-gradient(135deg, #f8a102 0%, #ffa500 100%);
+	color: #000;
+	font-weight: 600;
+	text-align: center;
+	vertical-align: middle;
+	border: none;
+	font-size: 19px;
+}
+
+.table tbody td {
+	vertical-align: middle;
+	padding: 12px 8px;
+	border-color: #dee2e6;
+	font-size: 18px;
+}
+
+.table thead th {
+	border: none;
+	padding: 15px 10px;
+}
+
+.special-chars {
+	font-family: Pwekish;
+	font-size: 20px;
+}
+
+.pronunciation {
+	font-style: italic;
+	color: #6c757d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.table {
+		font-size: 12px;
+	}
+	
+	.table thead th,
+	.table tbody td {
+		padding: 8px 4px;
+	}
+	
+	.table-header {
+		font-size: 17px;
+	}
+	
+	.table-subheader {
+		font-size: 15px;
+	}
+	
+		
+	.table tbody td {
+		font-size: 13px;
+	}
+	
+	.special-chars {
+		font-family: Pwekish;
+		font-size: 13px;
+	}
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+	.card {
+		--bs-card-bg: #323232;
+	}
+	
+	.card-header .btn-link:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+	
+	.collapsible-table-btn-icon,
+	.collapsible-table-btn-text {
+		color: #88c;
+	}
+	
+	.table-header {
+		background: linear-gradient(135deg, #000000 0%, #666 100%);
+	}
+	
+	.table-subheader {
+		background: linear-gradient(135deg, #000000 0%, #555 100%);
+	}
+
+	.table>:not(caption)>*>* {
+		background-color: #575;
+		color: white;
+		box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, #3344aa55));
+	}
+	
+	.table-dark tbody td {
+		border-color: #495057;
+	}
+	
+	.pronunciation {
+		color: #d2e8ff;
+	}
+}

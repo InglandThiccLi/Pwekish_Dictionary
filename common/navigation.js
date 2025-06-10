@@ -21,6 +21,11 @@ $(document).ready(function() {
             closeSideNav();
         }
     });
+	
+	// Accordion
+	$('#moreInfoAccordion').on('click', function() {
+        toggleAccordion();
+    });
 });
 
 function openSideNav() {
@@ -35,4 +40,19 @@ function closeSideNav() {
     $('#sideNav').removeClass('active');
     $('#overlay').removeClass('active');
     $('body').css('overflow', ''); // Restore scrolling
+}
+
+function toggleAccordion() {
+	const accordionToggle = $('#moreInfoAccordion');
+	const accordionContent = $('#accordionContent');
+	const isActive = $('#moreInfoAccordion').hasClass('active');
+	 if (isActive) {
+		// Close accordion
+		accordionToggle.removeClass('active');
+		accordionContent.removeClass('show');
+	} else {
+		// Open accordion
+		accordionToggle.addClass('active');
+		accordionContent.addClass('show');
+	}
 }

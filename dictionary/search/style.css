@@ -308,7 +308,7 @@
     border: 1px solid #ddd;
     padding: 8px 12px;
     text-align: left;
-    font-family: "Pwekish";
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Pwekish;
 }
 
 .word-table th {

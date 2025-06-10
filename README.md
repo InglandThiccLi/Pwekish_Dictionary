@@ -15,6 +15,11 @@ https://inglopedia.fandom.com/wiki/Inglopedia_Wiki
 - Other features will be available soon.
 
 ## Updates
+- v1.2 (2025-06-10):
+	1. Add more information for the dictionary (Alphabet, Affixes, Idioms, Chemistry).
+	2. Add accordion for "more info" section in the side navigation.
+	3. Show the "more info" button on home page and navigation.
+	4. The side navigation remains the same for all pages.
 - v1.1.1 (2025-06-05): Refine texts in the about page.
 - v1.1 (2025-06-04): 
 	1. Add about page.

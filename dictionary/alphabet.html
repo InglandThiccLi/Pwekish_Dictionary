@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pwekish Dictionary - Alphabet</title>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="../common/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Styles -->
+	<link href="../common/style.css" rel="stylesheet">
+    <link href="../common/article.css" rel="stylesheet">
+	<link href="../common/navigation.css" rel="stylesheet">
+	<link href="../common/table.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Title -->
+    <div class="page-title row">
+        <div class="col-12 text-center">
+            <h1 class="page-title-text">Pwekish Alphabet</h1>
+        </div>
+    </div>
+
+    <!-- Overlay for dimming -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Menu button -->
+    <button id="menuBtn" class="menu-btn">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <!-- Side navigation -->
+    <nav id="sideNav" class="side-nav">
+        <div class="side-nav-header">
+            <h2 class="side-nav-title">Navigation</h2>
+            <button id="closeBtn" class="close-btn">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <div class="side-nav-content">
+            <a href="../index.html" class="nav-item">
+                <i class="bi bi-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="../dictionary/search.html" class="nav-item">
+                <i class="bi bi-search"></i>
+                <span>Search</span>
+            </a>
+			<a href="../articles/about.html" class="nav-item">
+                <i class="bi bi-question-circle"></i>
+                <span>About</span>
+            </a>
+			<a href="../learn/home.html" class="nav-item hidden">
+                <i class="bi bi-book"></i>
+                <span>Learn</span>
+            </a>
+			<a href="../books/home.html" class="nav-item hidden">
+				<i class="bi bi-journals"></i>
+				<span>Books</span>
+			</a>
+			<div class="nav-accordion">
+				<div class="nav-item accordion-toggle" id="moreInfoAccordion">
+					<i class="bi bi-plus-circle accordion-icon"></i>
+					<span>More Info</span>
+					<i class="bi bi-chevron-down chevron-icon"></i>
+				</div>
+				<div class="accordion-content" id="accordionContent">
+					<a href="../dictionary/alphabet.html" class="accordion-item">
+						<i class="bi bi-alphabet"></i>
+						<span>Alphabet</span>
+					</a>
+					<a href="../dictionary/affixes.html" class="accordion-item">
+						<i class="bi bi-text-left"></i>
+						<span>Affixes</span>
+					</a>
+					<a href="../dictionary/idioms.html" class="accordion-item">
+						<i class="bi bi-chat-quote"></i>
+						<span>Idioms</span>
+					</a>
+					<a href="../dictionary/handzis.html" class="accordion-item hidden">
+						<i class="bi bi-translate"></i>
+						<span>Handzis</span>
+					</a>
+					<a href="../dictionary/periodic_table.html" class="accordion-item">
+						<i class="bi bi-flask"></i>
+						<span>Periodic Table</span>
+					</a>
+				</div>
+			</div>
+        </div>
+    </nav>
+
+    <hr>
+	
+	<!-- Content -->
+    <div class="article-container">
+        <div class="article-passage">
+			<h3>BentolRomak: The Romanization of Pwekish</h3>
+			<p>
+				BentolRomak is the romanization system of BentolPwék, the traditional writing method of the Pwekish language. 
+				This system employs a set of Latin characters that closely resemble those used in English, 
+				with a few notable exceptions, such as "ñ," "ņ," and "'".
+			</p>
+			<p>
+				BentolRomak is the most widely used writing style for Pwekish, celebrated for its simplicity and ease of typing. 
+				There are three variations of BentolRomak: "Dyiktsíp BentolRomak," "Xəņdyaņ BentolRomak," and "Inglekpoy BentolRomak." 
+				However, the majority of written texts are composed using "Dyiktsíp BentolRomak," which is also the version utilized on our website.
+			</p>
+			<p>
+				Below is a table displaying the alphabet of BentolRomak. Please note that compound letters do not have specific names.
+			</p>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#bentolromak_table_collapse" 
+							aria-expanded="true" 
+							aria-controls="bentolromak_table_collapse"
+							id="bentolromak_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold">BentolRomak Table</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="bentolromak_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse" id="bentolromak_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header" colspan="3">BentolRomak<br>書󰄞󰆒󰃟󰅧󰁘</th>
+									<th class="table-header" colspan="2">Pronunciation<br></th>
+									<th class="table-header" colspan="3">Letter Name</th>
+								</tr>
+								<tr>
+									<th class="table-subheader" rowspan="2">Dyiktsíp<br>直接</td>
+									<th class="table-subheader" rowspan="2">Xəņdyaņ<br>恆常</td>
+									<th class="table-subheader" rowspan="2">Inglekpoy<br>󰅮󰄍󰄱󰄺󰆅󰁘󰀁󰂿󰁴</td>
+									<th class="table-subheader" rowspan="2">Standard</td>
+									<th class="table-subheader" rowspan="2">Sekritnkaynresian</td>
+									<th class="table-subheader" rowspan="2">Name</td>
+									<th class="table-subheader" colspan="2">Pronunciation</td>
+								</tr>
+								<tr>
+									<th class="table-subheader">Standard</td>
+									<th class="table-subheader">Sekritnkaynresian</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>A a</strong></td>
+									<td><strong>A a</strong></td>
+									<td><strong>A a</strong></td>
+									<td><span class="pronunciation">/a/</span></td>
+									<td><span class="pronunciation">/a/</span></td>
+									<td><span class="special-chars">󰂓󰁕󰂤</span> aki</td>
+									<td><span class="pronunciation">/ˈaki/</span></td>
+									<td><span class="pronunciation">/a˧.ki˥/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ae ae</strong></td>
+									<td><strong>Ä ä</strong></td>
+									<td><strong>Æ æ</strong></td>
+									<td><span class="pronunciation">/ae̯/ [ɛ]</span></td>
+									<td><span class="pronunciation">/ɛ/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>B b</strong></td>
+									<td><strong>B b</strong></td>
+									<td><strong>B b</strong></td>
+									<td><span class="pronunciation">/b/</span></td>
+									<td><span class="pronunciation">/b/</span></td>
+									<td><span class="special-chars">󰀈󰂗󰁵󰀾</span> bayn</td>
+									<td><span class="pronunciation">/bajn/</span></td>
+									<td><span class="pronunciation">/bajn˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>C c</strong></td>
+									<td><strong>C c</strong></td>
+									<td><strong>Ç ç</strong></td>
+									<td><span class="pronunciation">/s/</span></td>
+									<td><span class="pronunciation">/ɕ/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>Cy cy</strong></td>
+									<td><strong>C c</strong></td>
+									<td><strong>Ç ç</strong></td>
+									<td><span class="pronunciation">/s/</span></td>
+									<td><span class="pronunciation">/ɕ/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>D d</strong></td>
+									<td><strong>D d</strong></td>
+									<td><strong>D d</strong></td>
+									<td><span class="pronunciation">/d/</span></td>
+									<td><span class="pronunciation">/d/</span></td>
+									<td><span class="special-chars">󰀲󰃂</span> do</td>
+									<td><span class="pronunciation">/do/</span></td>
+									<td><span class="pronunciation">/do˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Dy dy</strong></td>
+									<td><strong>J j</strong></td>
+									<td><strong>J j</strong></td>
+									<td><span class="pronunciation">/dʑ/</span></td>
+									<td><span class="pronunciation">/dʑ/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>Dz dz</strong></td>
+									<td><strong>Dz dz</strong></td>
+									<td><strong>Dz dz</strong></td>
+									<td><span class="pronunciation">/dz/</span></td>
+									<td><span class="pronunciation">/dz/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>E e</strong></td>
+									<td><strong>E e</strong></td>
+									<td><strong>E e</strong></td>
+									<td><span class="pronunciation">/e/</span></td>
+									<td><span class="pronunciation">/e/</span></td>
+									<td><span class="special-chars">󰂱󰀲󰂮</span> edu</td>
+									<td><span class="pronunciation">/ˈedu/</span></td>
+									<td><span class="pronunciation">/e˧.du˥/</span></td>
+								</tr>
+								<tr>
+									<td><strong>F f</strong></td>
+									<td><strong>F f</strong></td>
+									<td><strong>F f</strong></td>
+									<td><span class="pronunciation">/ɸ/</span></td>
+									<td><span class="pronunciation">/f/</span></td>
+									<td><span class="special-chars">󰀖󰂡󰁄󰀾</span> fisn</td>
+									<td><span class="pronunciation">/ɸisn/</span></td>
+									<td><span class="pronunciation">/fin˥˩/</span></td>
+								</tr>
+								<tr>
+									<td><strong>G g</strong></td>
+									<td><strong>G g</strong></td>
+									<td><strong>G g</strong></td>
+									<td><span class="pronunciation">/ɡ/</span></td>
+									<td><span class="pronunciation">/ɡ/</span></td>
+									<td><span class="special-chars">󰁜󰂫󰀼</span> gun</td>
+									<td><span class="pronunciation">/ɡun/</span></td>
+									<td><span class="pronunciation">/ɡun˥/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Gy gy</strong></td>
+									<td><strong>Gy gy</strong></td>
+									<td><strong>Gy gy</strong></td>
+									<td><span class="pronunciation">/z/</span></td>
+									<td><span class="pronunciation">/ʑ/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>H h</strong></td>
+									<td><strong>H h</strong></td>
+									<td><strong>H h</strong></td>
+									<td><span class="pronunciation">/h/</span></td>
+									<td><span class="pronunciation">/h/</span></td>
+									<td><span class="special-chars">󰁿󰂵󰀧</span> hew</td>
+									<td><span class="pronunciation">/hew/</span></td>
+									<td><span class="pronunciation">/hew˥/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Hy hy</strong></td>
+									<td><strong>Hy hy</strong></td>
+									<td><strong>Hy hy</strong></td>
+									<td><span class="pronunciation">/ç/</span></td>
+									<td><span class="pronunciation">/ç/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>I i</strong></td>
+									<td><strong>I i</strong></td>
+									<td><strong>I i</strong></td>
+									<td><span class="pronunciation">/i/</span></td>
+									<td><span class="pronunciation">/i/</span></td>
+									<td><span class="special-chars">󰂝󰀫󰃂</span> ito</td>
+									<td><span class="pronunciation">/ˈito/</span></td>
+									<td><span class="pronunciation">/i˧.to˥/</span></td>
+								</tr>
+								<tr>
+									<td><strong>K k</strong></td>
+									<td><strong>K k</strong></td>
+									<td><strong>K k</strong></td>
+									<td><span class="pronunciation">/k/</span></td>
+									<td><span class="pronunciation">/k/</span></td>
+									<td><span class="special-chars">󰁕󰂗󰁵󰀾</span> kayn</td>
+									<td><span class="pronunciation">/kajn/</span></td>
+									<td><span class="pronunciation">/kajn˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>L l</strong></td>
+									<td><strong>L l</strong></td>
+									<td><strong>L l</strong></td>
+									<td><span class="pronunciation">/l/</span></td>
+									<td><span class="pronunciation">/l/</span></td>
+									<td><span class="special-chars">󰁪󰂿󰁴</span> loy</td>
+									<td><span class="pronunciation">/loj/</span></td>
+									<td><span class="pronunciation">/loj˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ll ll</strong></td>
+									<td><strong>Ll ll</strong></td>
+									<td><strong>Ll ll</strong></td>
+									<td><span class="pronunciation">/ʎ/</span></td>
+									<td><span class="pronunciation">/j/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>M m</strong></td>
+									<td><strong>M m</strong></td>
+									<td><strong>M m</strong></td>
+									<td><span class="pronunciation">/m/</span></td>
+									<td><span class="pronunciation">/m/</span></td>
+									<td><span class="special-chars">󰀏󰂚</span> ma</td>
+									<td><span class="pronunciation">/ma/</span></td>
+									<td><span class="pronunciation">/ma˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>N n</strong></td>
+									<td><strong>N n</strong></td>
+									<td><strong>N n</strong></td>
+									<td><span class="pronunciation">/n/</span></td>
+									<td><span class="pronunciation">/n/</span></td>
+									<td><span class="special-chars">󰀹󰂫󰁑</span> nur</td>
+									<td><span class="pronunciation">/nur/</span></td>
+									<td><span class="pronunciation">/nul˩˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ņ ņ</strong></td>
+									<td><strong>Ng ng</strong></td>
+									<td><strong>Ņ ņ</strong></td>
+									<td><span class="pronunciation">/ŋ/</span></td>
+									<td><span class="pronunciation">/ŋ/</span></td>
+									<td><span class="special-chars">󰁣󰂡󰀧</span> ņiw</td>
+									<td><span class="pronunciation">/ŋiw/</span></td>
+									<td><span class="pronunciation">/ŋiw˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ñ ñ</strong></td>
+									<td><strong>Ñ ñ</strong></td>
+									<td><strong>Ñ ñ</strong></td>
+									<td><span class="pronunciation">/ɲ/</span></td>
+									<td><span class="pronunciation">/ɲ/</span></td>
+									<td><span class="special-chars">󰁸󰂵󰀄</span> ñep</td>
+									<td><span class="pronunciation">/ɲep/</span></td>
+									<td><span class="pronunciation">/ɲep̚˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>O o</strong></td>
+									<td><strong>O o</strong></td>
+									<td><strong>O o</strong></td>
+									<td><span class="pronunciation">/o/</span></td>
+									<td><span class="pronunciation">/o/</span></td>
+									<td><span class="special-chars">󰂼󰁑󰁪󰃂</span> orlo</td>
+									<td><span class="pronunciation">/ˈoɬo/</span></td>
+									<td><span class="pronunciation">/o˧.ɬo˥/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Oe oe</strong></td>
+									<td><strong>Ö ö</strong></td>
+									<td><strong>Œ œ</strong></td>
+									<td><span class="pronunciation">/o̯e/ [œ]</span></td>
+									<td><span class="pronunciation">/œ/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>Ou ou</strong></td>
+									<td><strong>Ou ou</strong></td>
+									<td><strong>Ou ou</strong></td>
+									<td><span class="pronunciation">/u/</span></td>
+									<td><span class="pronunciation">/u/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>P p</strong></td>
+									<td><strong>P p</strong></td>
+									<td><strong>P p</strong></td>
+									<td><span class="pronunciation">/p/</span></td>
+									<td><span class="pronunciation">/p/</span></td>
+									<td><span class="special-chars">󰀁󰂗󰁘</span> pak</td>
+									<td><span class="pronunciation">/pak/</span></td>
+									<td><span class="pronunciation">/pak̚˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>R r</strong></td>
+									<td><strong>R r</strong></td>
+									<td><strong>R r</strong></td>
+									<td><span class="pronunciation">/r/</span></td>
+									<td><span class="pronunciation">/ɾ/</span></td>
+									<td><span class="special-chars">󰁎󰂡󰀼</span> rin</td>
+									<td><span class="pronunciation">/rin/</span></td>
+									<td><span class="pronunciation">/rin˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Rl rl</strong></td>
+									<td><strong>Lh lh</strong></td>
+									<td><strong>Rl rl</strong></td>
+									<td><span class="pronunciation">/ɬ/</span></td>
+									<td><span class="pronunciation">/ɬ/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>S s</strong></td>
+									<td><strong>S s</strong></td>
+									<td><strong>S s</strong></td>
+									<td><span class="pronunciation">/s/</span></td>
+									<td><span class="pronunciation">/s/</span></td>
+									<td><span class="special-chars">󰁀󰂡󰁭</span> sil</td>
+									<td><span class="pronunciation">/sil/</span></td>
+									<td><span class="pronunciation">/sil˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Si si</strong></td>
+									<td><strong>Si si</strong></td>
+									<td><strong>Si si</strong></td>
+									<td><span class="pronunciation">/si/ /ɕ(ə)/</span></td>
+									<td><span class="pronunciation">/si/ /ɕ(ə)/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>Sy sy</strong></td>
+									<td><strong>Sh sh</strong></td>
+									<td><strong>ẞ ß</strong></td>
+									<td><span class="pronunciation">/ɕ/</span></td>
+									<td><span class="pronunciation">/ɕ/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>T t</strong></td>
+									<td><strong>T t</strong></td>
+									<td><strong>T t</strong></td>
+									<td><span class="pronunciation">/t/</span></td>
+									<td><span class="pronunciation">/t/</span></td>
+									<td><span class="special-chars">󰀫󰃂󰁪󰃂</span> tolo</td>
+									<td><span class="pronunciation">/ˈtolo/</span></td>
+									<td><span class="pronunciation">/to˥.lo˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ts ts</strong></td>
+									<td><strong>Ts ts</strong></td>
+									<td><strong>Ţ ţ</strong></td>
+									<td><span class="pronunciation">/ts/</span></td>
+									<td><span class="pronunciation">/ts/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>Ty ty</strong></td>
+									<td><strong>Ch ch</strong></td>
+									<td><strong>C c</strong></td>
+									<td><span class="pronunciation">/tɕ/</span></td>
+									<td><span class="pronunciation">/tɕ/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>U u</strong></td>
+									<td><strong>U u</strong></td>
+									<td><strong>U u</strong></td>
+									<td><span class="pronunciation">/u/</span></td>
+									<td><span class="pronunciation">/u/</span></td>
+									<td><span class="special-chars">󰂧󰀏󰂤</span> umi</td>
+									<td><span class="pronunciation">/ˈumi/</span></td>
+									<td><span class="pronunciation">/u˧.mi˥/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ue ue</strong></td>
+									<td><strong>Ü ü</strong></td>
+									<td><strong>ɤ ᵫ</strong></td>
+									<td><span class="pronunciation">/u̯e/ [y]</span></td>
+									<td><span class="pronunciation">/y/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>V v</strong></td>
+									<td><strong>V v</strong></td>
+									<td><strong>V v</strong></td>
+									<td><span class="pronunciation">/β/</span></td>
+									<td><span class="pronunciation">/v/</span></td>
+									<td><span class="special-chars">󰀝󰂫󰁑</span> vur</td>
+									<td><span class="pronunciation">/βur/</span></td>
+									<td><span class="pronunciation">/vul˩˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>W w</strong></td>
+									<td><strong>W w</strong></td>
+									<td><strong>W w</strong></td>
+									<td><span class="pronunciation">/w/</span></td>
+									<td><span class="pronunciation">/ʋ/ /w/</span></td>
+									<td><span class="special-chars">󰀤󰂿󰀋</span> wob</td>
+									<td><span class="pronunciation">/wob/</span></td>
+									<td><span class="pronunciation">/ʋop̚˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>X x</strong></td>
+									<td><strong>X x</strong></td>
+									<td><strong>X x</strong></td>
+									<td><span class="pronunciation">/ʁ/</span></td>
+									<td><span class="pronunciation">/ɣ/</span></td>
+									<td><span class="special-chars">󰂆󰂫󰀼</span> xun</td>
+									<td><span class="pronunciation">/ʁun/</span></td>
+									<td><span class="pronunciation">/ɣun˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Y y</strong></td>
+									<td><strong>Y y</strong></td>
+									<td><strong>Y y</strong></td>
+									<td><span class="pronunciation">/j/</span></td>
+									<td><span class="pronunciation">/j/</span></td>
+									<td><span class="special-chars">󰁱󰂤</span> yi</td>
+									<td><span class="pronunciation">/ji/</span></td>
+									<td><span class="pronunciation">/ji˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Yu yu</strong></td>
+									<td><strong>Yu yu</strong></td>
+									<td><strong>Yu yu</strong></td>
+									<td><span class="pronunciation">/ju/ [ɥ(u)]</span></td>
+									<td><span class="pronunciation">/ɥ(u)/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>Z z</strong></td>
+									<td><strong>Z z</strong></td>
+									<td><strong>Z z</strong></td>
+									<td><span class="pronunciation">/z/</span></td>
+									<td><span class="pronunciation">/z/</span></td>
+									<td><span class="special-chars">󰁇󰂚</span> za</td>
+									<td><span class="pronunciation">/za/</span></td>
+									<td><span class="pronunciation">/za˧/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Zy zy</strong></td>
+									<td><strong>Zh zh</strong></td>
+									<td><strong>Zh zh</strong></td>
+									<td><span class="pronunciation">/ʑ/</span></td>
+									<td><span class="pronunciation">/ʑ/</span></td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+									<td class="text-muted">\</td>
+								</tr>
+								<tr>
+									<td><strong>` '</strong></td>
+									<td><strong>'</strong></td>
+									<td><strong>` '</strong></td>
+									<td><span class="pronunciation">/ʔ/</span></td>
+									<td><span class="pronunciation">/ʔ/</span></td>
+									<td><span class="special-chars">󰂎󰁳󰂗󰁦</span> 'yaņ</td>
+									<td><span class="pronunciation">/ʔʲaŋ/</span></td>
+									<td><span class="pronunciation">/ʔʲaŋ˥/</span></td>
+								</tr>
+								<tr>
+									<td><strong>ə</strong></td>
+									<td><strong>ê</strong></td>
+									<td><strong>ê</strong></td>
+									<td><span class="pronunciation">/(ə)/</span></td>
+									<td><span class="pronunciation">/(ə)/</span></td>
+									<td><span class="special-chars">󰀫󰂵󰀒</span> tem</td>
+									<td><span class="pronunciation">/tem/</span></td>
+									<td><span class="pronunciation">/tem˥/</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="article-passage">
+			<h3>BentolPwék: The Traditional Script of Pwekish</h3>
+			<p>
+				BentolPwék serves as the traditional script for the Pwekish language. 
+				Its letters were originally derived from the cursive forms of Chinese characters. 
+				These characters either represent the sound of each letter or correspond to a Pwekish word that contains that sound. 
+				As these Chinese characters evolved into BentolPwék letters, their original readings became the names of the letters themselves.
+			</p>
+			<h4>Types</h4>
+			<p>
+				BentolPwék is a writing system similar to Japanese, with can be divided into 3 different parts:
+			</p>
+			<ol class="article-left-list">
+				<li>Punloy BentolPwék (本來書佩, "The Original Writing of the Pwekish"), which looks cursive.</li>
+				<li>Kentan BentolPwék (簡單書佩, "The Simplified Writing of the Pwekish"), which looks straight.</li>
+				<li>Handzi (漢字, "Chinese Characters"), which is almost the same as traditional Chinese characters.</li>
+			</ol>
+			<h4>Usage</h4>
+			<p>
+				These 3 sets of characters are used for different purposes:
+			</p>
+			<ul class="article-left-list">
+				<li>
+					Punloy BentolPwék
+					<ul>
+						<li>Pwekish vocabularies that cannot be represented with any Handzi (Chinese) character</li>
+						<li>Tail of verbs (if the verb written has more than 1 syllable)</li>
+						<li>Grammatical particles and affixes</li>
+						<li>Representations of the reading of Handzi characters</li>
+					</ul>
+				</li>
+				<li>
+					Kentan BentolPwék
+					<ul>
+						<li>Loanword class vocabularies</li>
+						<li>Onomatopoeia</li>
+						<li>Representations of non-native reading of Handzi characters (i.e. those that are from Cantonese, Mandarin, Japanese, Korean, etc)</li>
+					</ul>
+				</li>
+				<li>
+					Handzi
+					<ul>
+						<li>Most nouns</li>
+						<li>Head of verbs (i.e. the first syllable of verbs)</li>
+						<li>Hanngo class vocabularies</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				Below is a table illustrating the corresponding BentolPwék letters for the BentolRomak alphabet.
+			</p>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#bentolpwek_table_collapse" 
+							aria-expanded="true" 
+							aria-controls="bentolpwek_table_collapse"
+							id="bentolpwek_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold">BentolPwék Table</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="bentolpwek_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse" id="bentolpwek_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header">BentolRomak<br>書󰄞󰆒󰃟󰅧󰁘</th>
+									<th class="table-header">Punloy BentolPwék<br>本來書佩</th>
+									<th class="table-header">Kentan BentolPwék<br>簡單書佩</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>A a</strong></td>
+									<td><span class="special-chars">󰂓</span></td>
+									<td><span class="special-chars">󰅣</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ae ae</strong></td>
+									<td><span class="special-chars">󰂔󰂸</span></td>
+									<td><span class="special-chars">󰅤󰆈</span></td>
+								</tr>
+								<tr>
+									<td><strong>B b</strong></td>
+									<td><span class="special-chars">󰀇</span></td>
+									<td><span class="special-chars">󰃗</span></td>
+								</tr>
+								<tr>
+									<td><strong>C c</strong></td>
+									<td><span class="special-chars">󰁖󰁳󰃇</span></td>
+									<td><span class="special-chars">󰄦󰅃󰆗</span></td>
+								</tr>
+								<tr>
+									<td><strong>Cy cy</strong></td>
+									<td><span class="special-chars">󰁖󰁳󰃇</span></td>
+									<td><span class="special-chars">󰄦󰅃󰆗</span></td>
+								</tr>
+								<tr>
+									<td><strong>D d</strong></td>
+									<td><span class="special-chars">󰀱</span></td>
+									<td><span class="special-chars">󰄁</span></td>
+								</tr>
+								<tr>
+									<td><strong>Dy dy</strong></td>
+									<td><span class="special-chars">󰀳󰁳󰃇</span></td>
+									<td><span class="special-chars">󰄃󰅃󰆗</span></td>
+								</tr>
+								<tr>
+									<td><strong>Dz dz</strong></td>
+									<td><span class="special-chars">󰀳󰁉󰃇</span></td>
+									<td><span class="special-chars">󰄃󰄙󰆗</span></td>
+								</tr>
+								<tr>
+									<td><strong>E e</strong></td>
+									<td><span class="special-chars">󰂱</span></td>
+									<td><span class="special-chars">󰆁</span></td>
+								</tr>
+								<tr>
+									<td><strong>F f</strong></td>
+									<td><span class="special-chars">󰀕</span></td>
+									<td><span class="special-chars">󰃥</span></td>
+								</tr>
+								<tr>
+									<td><strong>G g</strong></td>
+									<td><span class="special-chars">󰁛</span></td>
+									<td><span class="special-chars">󰄫</span></td>
+								</tr>
+								<tr>
+									<td><strong>Gy gy</strong></td>
+									<td><span class="special-chars">󰁝󰁳󰃇</span></td>
+									<td><span class="special-chars">󰄭󰅃󰆗</span></td>
+								</tr>
+								<tr>
+									<td><strong>H h</strong></td>
+									<td><span class="special-chars">󰁾</span></td>
+									<td><span class="special-chars">󰅎</span></td>
+								</tr>
+								<tr>
+									<td><strong>Hy hy</strong></td>
+									<td><span class="special-chars">󰂀󰁳󰃇</span></td>
+									<td><span class="special-chars">󰅐󰅃󰆗</span></td>
+								</tr>
+								<tr>
+									<td><strong>I i</strong></td>
+									<td><span class="special-chars">󰂝</span></td>
+									<td><span class="special-chars">󰅭</span></td>
+								</tr>
+								<tr>
+									<td><strong>K k</strong></td>
+									<td><span class="special-chars">󰁔</span></td>
+									<td><span class="special-chars">󰄤</span></td>
+								</tr>
+								<tr>
+									<td><strong>L l</strong></td>
+									<td><span class="special-chars">󰁩</span></td>
+									<td><span class="special-chars">󰄹</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ll ll</strong></td>
+									<td><span class="special-chars">󰁫󰁬󰃇</span></td>
+									<td><span class="special-chars">󰄻󰄼󰆗</span></td>
+								</tr>
+								<tr>
+									<td><strong>M m</strong></td>
+									<td><span class="special-chars">󰀎</span></td>
+									<td><span class="special-chars">󰃞</span></td>
+								</tr>
+								<tr>
+									<td><strong>N n</strong></td>
+									<td><span class="special-chars">󰀸</span></td>
+									<td><span class="special-chars">󰄈</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ņ ņ</strong></td>
+									<td><span class="special-chars">󰁢</span></td>
+									<td><span class="special-chars">󰄲</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ñ ñ</strong></td>
+									<td><span class="special-chars">󰁷</span></td>
+									<td><span class="special-chars">󰅇</span></td>
+								</tr>
+								<tr>
+									<td><strong>O o</strong></td>
+									<td><span class="special-chars">󰂻</span></td>
+									<td><span class="special-chars">󰆋</span></td>
+								</tr>
+								<tr>
+									<td><strong>Oe oe</strong></td>
+									<td><span class="special-chars">󰂼󰂸</span></td>
+									<td><span class="special-chars">󰆌󰆈</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ou ou</strong></td>
+									<td><span class="special-chars">󰂼󰂮</span></td>
+									<td><span class="special-chars">󰆌󰅾</span></td>
+								</tr>
+								<tr>
+									<td><strong>P p</strong></td>
+									<td><span class="special-chars">󰀀</span></td>
+									<td><span class="special-chars">󰃐</span></td>
+								</tr>
+								<tr>
+									<td><strong>R r</strong></td>
+									<td><span class="special-chars">󰁍</span></td>
+									<td><span class="special-chars">󰄝</span></td>
+								</tr>
+								<tr>
+									<td><strong>Rl rl</strong></td>
+									<td><span class="special-chars">󰁏󰁬󰃇</span></td>
+									<td><span class="special-chars">󰄟󰄼󰆗</span></td>
+								</tr>
+								<tr>
+									<td><strong>S s</strong></td>
+									<td><span class="special-chars">󰀿</span></td>
+									<td><span class="special-chars">󰄏</span></td>
+								</tr>
+								<tr>
+									<td><strong>Si si</strong></td>
+									<td><span class="special-chars">󰁀󰂤</span></td>
+									<td><span class="special-chars">󰄐󰅴</span></td>
+								</tr>
+								<tr>
+									<td><strong>Sy sy</strong></td>
+									<td><span class="special-chars">󰁁󰁳󰃇</span></td>
+									<td><span class="special-chars">󰄑󰅃󰆗</span></td>
+								</tr>
+								<tr>
+									<td><strong>T t</strong></td>
+									<td><span class="special-chars">󰀪</span></td>
+									<td><span class="special-chars">󰃺</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ts ts</strong></td>
+									<td><span class="special-chars">󰀬󰁂󰃇</span></td>
+									<td><span class="special-chars">󰃼󰄒󰆗</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ty ty</strong></td>
+									<td><span class="special-chars">󰀬󰁳󰃇</span></td>
+									<td><span class="special-chars">󰃼󰅃󰆗</span></td>
+								</tr>
+								<tr>
+									<td><strong>U u</strong></td>
+									<td><span class="special-chars">󰂧</span></td>
+									<td><span class="special-chars">󰅷</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ue ue</strong></td>
+									<td><span class="special-chars">󰂨󰂸</span></td>
+									<td><span class="special-chars">󰅸󰆈</span></td>
+								</tr>
+								<tr>
+									<td><strong>V v</strong></td>
+									<td><span class="special-chars">󰀜</span></td>
+									<td><span class="special-chars">󰃬</span></td>
+								</tr>
+								<tr>
+									<td><strong>W w</strong></td>
+									<td><span class="special-chars">󰀣</span></td>
+									<td><span class="special-chars">󰃳</span></td>
+								</tr>
+								<tr>
+									<td><strong>X x</strong></td>
+									<td><span class="special-chars">󰂅</span></td>
+									<td><span class="special-chars">󰅕</span></td>
+								</tr>
+								<tr>
+									<td><strong>Y y</strong></td>
+									<td><span class="special-chars">󰁰</span></td>
+									<td><span class="special-chars">󰅀</span></td>
+								</tr>
+								<tr>
+									<td><strong>Yu yu</strong></td>
+									<td><span class="special-chars">󰁱󰂮</span></td>
+									<td><span class="special-chars">󰅁󰅾</span></td>
+								</tr>
+								<tr>
+									<td><strong>Z z</strong></td>
+									<td><span class="special-chars">󰁆</span></td>
+									<td><span class="special-chars">󰄖</span></td>
+								</tr>
+								<tr>
+									<td><strong>Zy zy</strong></td>
+									<td><span class="special-chars">󰁈󰁳󰃇</span></td>
+									<td><span class="special-chars">󰄘󰅃󰆗</span></td>
+								</tr>
+								<tr>
+									<td><strong>` '</strong></td>
+									<td><span class="special-chars">󰂌</span></td>
+									<td><span class="special-chars">󰅜</span></td>
+								</tr>
+								<tr>
+									<td><strong>ə</strong></td>
+									<td><span class="special-chars">󰃅</span></td>
+									<td><span class="special-chars">󰆕</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+        </div>
+		<hr>
+		<div class="article-passage">
+            <h3>Personal Verb Initial Mutation</h3>
+            <p>
+				In the Pwekish language, verbs are conjugated according to the subject of a sentence. 
+				For the second person (i.e., "you") and third person (i.e., "he," "she," "it," or "they"), the initial consonant of the verb undergoes a change. 
+				This phenomenon is known as the Personal Verb Initial Mutation in Pwekish language studies. 
+				The rules governing these mutations can be easily memorized using the 3 Letter Law (Pwekish: 三字母法則, or Sàm-Dzimu Faptsk), 
+				which categorizes letters into groups of three.
+            </p>
+			<ol class="article-centered-list">
+				<li>p, b, m</li>
+				<li>f, v, w</li>
+				<li>t, d, n</li>
+				<li>s, z, r</li>
+				<li>k, g, ņ</li>
+				<li>l, y, ñ</li>
+				<li>h, x, '</li>
+			</ol>
+			<p>
+				In these groups:
+			</p>
+			<ul class="article-left-list">
+				<li>The first letter is called the Fuku'ìm (吹󰁕󰂮音), which generally represents voiceless consonants.</li>
+				<li>The second letter is referred to as the Dyok'ìm (濁音), which typically signifies voiced consonants.</li>
+				<li>The third letter is known as the Eson'ìm (鼻音), which generally corresponds to nasal consonants.</li>
+			</ul>
+			<h4>Mutation Rules</h4>
+			<p>For verbs conjugated for the 2nd person, the transformations are as follows:</p>
+			<ul class="article-left-list">
+				<li>Fuku'ìm becomes the corresponding Dyok'ìm</li>
+				<li>Dyok'ìm becomes the corresponding Eson'ìm</li>
+				<li>Eson'ìm becomes the corresponding Fuku'ìm</li>
+			</ul>
+			<p>For verbs conjugated for the 3rd person, the transformations are as follows:</p>
+			<ul class="article-left-list">
+				<li>Fuku'ìm becomes the corresponding Eson'ìm</li>
+				<li>Dyok'ìm becomes the corresponding Fuku'ìm</li>
+				<li>Eson'ìm becomes the corresponding Dyok'ìm</li>
+			</ul>
+			<p>
+				In BentolPwek, these are denoted as 󰃈- for the 2nd person and 󰃉- for the 3rd person. 
+				In BentolRomak, the transformations are indicated as follows:
+			</p>
+			<ul class="article-left-list">
+				<li>Fuku'ìm: -h</li>
+				<li>Dyok'ìm: h-</li>
+				<li>Eson'ìm: n-</li>
+			</ul>
+			<h4>Important Notes</h4>
+			<p>Here is some tips for the usage of the Personal Verb Initial Mutation</p>
+			<ul class="article-left-list">
+				<li>Personal Verb Initial Mutation occurs only at the beginning of verbs, regardless of any affixes or modifiers attached to the verb.</li>
+				<li>It can apply to verbs that specifically describe an action related to a particular person, as well as to verbs transformed into nouns or modifiers.</li>
+				<li>This mutation also affects adjectives when used in the predicative form.</li>
+			</ul>
+			<p>
+				Below is a table showcasing all the personal verb initial mutations in Pwekish.
+			</p>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#mutation_table_collapse" 
+							aria-expanded="true" 
+							aria-controls="mutation_table_collapse"
+							id="mutation_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold">Personal Verb Initial Mutation Table</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="mutation_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				
+				<div class="collapse" id="mutation_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header" colspan="3">1st/4th Person</th>
+									<th class="table-header" colspan="3">2nd Person 󰃈-</th>
+									<th class="table-header" colspan="3">3rd Person 󰃉-</th>
+								</tr>
+								<tr>
+									<th class="table-header">BentolRomak</th>
+									<th class="table-header">Standard Pronunciation</th>
+									<th class="table-header">Sekritnkaynresian Pronunciation</th>
+									<th class="table-header">BentolRomak</th>
+									<th class="table-header">Standard Pronunciation</th>
+									<th class="table-header">Sekritnkaynresian Pronunciation</th>
+									<th class="table-header">BentolRomak</th>
+									<th class="table-header">Standard Pronunciation</th>
+									<th class="table-header">Sekritnkaynresian Pronunciation</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>A a</strong></td>
+									<td><span class="pronunciation">/a/</span></td>
+									<td><span class="pronunciation">/a/</span></td>
+									<td><strong>hA ha</strong></td>
+									<td><span class="pronunciation">/ha/</span></td>
+									<td><span class="pronunciation">/ha/</span></td>
+									<td><strong>hhA hha</strong></td>
+									<td><span class="pronunciation">/ʁa/</span></td>
+									<td><span class="pronunciation">/ɣa/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ae ae</strong></td>
+									<td><span class="pronunciation">/ae̯/ [ɛ]</span></td>
+									<td><span class="pronunciation">/ɛ/</span></td>
+									<td><strong>hAe hae</strong></td>
+									<td><span class="pronunciation">/hae̯/ [hɛ]</span></td>
+									<td><span class="pronunciation">/hɛ/</span></td>
+									<td><strong>hhAe hhae</strong></td>
+									<td><span class="pronunciation">/ʁae̯/ [ʁɛ]</span></td>
+									<td><span class="pronunciation">/ɣɛ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>B b</strong></td>
+									<td><span class="pronunciation">/b/</span></td>
+									<td><span class="pronunciation">/b/</span></td>
+									<td><strong>nB nb</strong></td>
+									<td><span class="pronunciation">/m/</span></td>
+									<td><span class="pronunciation">/m/</span></td>
+									<td><strong>Bh bh</strong></td>
+									<td><span class="pronunciation">/p/</span></td>
+									<td><span class="pronunciation">/p/</span></td>
+								</tr>
+								<tr>
+									<td><strong>C c</strong></td>
+									<td><span class="pronunciation">/s/</span></td>
+									<td><span class="pronunciation">/ɕ/</span></td>
+									<td><strong>hC hc</strong></td>
+									<td><span class="pronunciation">/z/</span></td>
+									<td><span class="pronunciation">/z/</span></td>
+									<td><strong>nC nc</strong></td>
+									<td><span class="pronunciation">/ŋʲ/</span></td>
+									<td><span class="pronunciation">/ŋʲ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Cy cy</strong></td>
+									<td><span class="pronunciation">/s/</span></td>
+									<td><span class="pronunciation">/ɕ/</span></td>
+									<td><strong>hCy hcy</strong></td>
+									<td><span class="pronunciation">/z/</span></td>
+									<td><span class="pronunciation">/z/</span></td>
+									<td><strong>nCy ncy</strong></td>
+									<td><span class="pronunciation">/ŋʲ/</span></td>
+									<td><span class="pronunciation">/ŋʲ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>D d</strong></td>
+									<td><span class="pronunciation">/d/</span></td>
+									<td><span class="pronunciation">/d/</span></td>
+									<td><strong>nD nd</strong></td>
+									<td><span class="pronunciation">/n/</span></td>
+									<td><span class="pronunciation">/n/</span></td>
+									<td><strong>Dh dh</strong></td>
+									<td><span class="pronunciation">/t/</span></td>
+									<td><span class="pronunciation">/t/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Dy dy</strong></td>
+									<td><span class="pronunciation">/dʑ/</span></td>
+									<td><span class="pronunciation">/dʑ/</span></td>
+									<td><strong>nDy ndy</strong></td>
+									<td><span class="pronunciation">/ɲ/</span></td>
+									<td><span class="pronunciation">/ɲ/</span></td>
+									<td><strong>Dhy dhy</strong></td>
+									<td><span class="pronunciation">/tɕ/</span></td>
+									<td><span class="pronunciation">/tɕ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Dz dz</strong></td>
+									<td><span class="pronunciation">/dz/</span></td>
+									<td><span class="pronunciation">/dz/</span></td>
+									<td><strong>nDz ndz</strong></td>
+									<td><span class="pronunciation">/nr/</span></td>
+									<td><span class="pronunciation">/n/ (rising tone)</span></td>
+									<td><strong>Dhz dhz</strong></td>
+									<td><span class="pronunciation">/ts/</span></td>
+									<td><span class="pronunciation">/ts/</span></td>
+								</tr>
+								<tr>
+									<td><strong>E e</strong></td>
+									<td><span class="pronunciation">/e/</span></td>
+									<td><span class="pronunciation">/e/</span></td>
+									<td><strong>hE he</strong></td>
+									<td><span class="pronunciation">/he/</span></td>
+									<td><span class="pronunciation">/he/</span></td>
+									<td><strong>hhE hhe</strong></td>
+									<td><span class="pronunciation">/ʁe/</span></td>
+									<td><span class="pronunciation">/ɣe/</span></td>
+								</tr>
+								<tr>
+									<td><strong>F f</strong></td>
+									<td><span class="pronunciation">/ɸ/</span></td>
+									<td><span class="pronunciation">/f/</span></td>
+									<td><strong>hF hf</strong></td>
+									<td><span class="pronunciation">/β/</span></td>
+									<td><span class="pronunciation">/v/</span></td>
+									<td><strong>nF nf</strong></td>
+									<td><span class="pronunciation">/w/</span></td>
+									<td><span class="pronunciation">/ʋ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>G g</strong></td>
+									<td><span class="pronunciation">/g/</span></td>
+									<td><span class="pronunciation">/g/</span></td>
+									<td><strong>nG ng</strong></td>
+									<td><span class="pronunciation">/ŋ/</span></td>
+									<td><span class="pronunciation">/ŋ/</span></td>
+									<td><strong>Gh gh</strong></td>
+									<td><span class="pronunciation">/k/</span></td>
+									<td><span class="pronunciation">/k/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Gy gy</strong></td>
+									<td><span class="pronunciation">/z/</span></td>
+									<td><span class="pronunciation">/ʑ/</span></td>
+									<td><strong>nGy ngy</strong></td>
+									<td><span class="pronunciation">/ŋʲ/</span></td>
+									<td><span class="pronunciation">/ŋʲ/</span></td>
+									<td><strong>Ghy ghy</strong></td>
+									<td><span class="pronunciation">/s/</span></td>
+									<td><span class="pronunciation">/s/</span></td>
+								</tr>
+								<tr>
+									<td><strong>H h</strong></td>
+									<td><span class="pronunciation">/h/</span></td>
+									<td><span class="pronunciation">/h/</span></td>
+									<td><strong>hH hh</strong></td>
+									<td><span class="pronunciation">/ʁ/</span></td>
+									<td><span class="pronunciation">/ɣ/</span></td>
+									<td><strong>nH nh</strong></td>
+									<td><span class="pronunciation">/ʔ/</span></td>
+									<td><span class="pronunciation">/ʔ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Hy hy</strong></td>
+									<td><span class="pronunciation">/ç/</span></td>
+									<td><span class="pronunciation">/ç/</span></td>
+									<td><strong>hHy hhy</strong></td>
+									<td><span class="pronunciation">/ʁʲ/</span></td>
+									<td><span class="pronunciation">/ɣʲ/</span></td>
+									<td><strong>nHy nhy</strong></td>
+									<td><span class="pronunciation">/ʔʲ/</span></td>
+									<td><span class="pronunciation">/ʔʲ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>I i</strong></td>
+									<td><span class="pronunciation">/i/</span></td>
+									<td><span class="pronunciation">/i/</span></td>
+									<td><strong>hI hi</strong></td>
+									<td><span class="pronunciation">/hi/</span></td>
+									<td><span class="pronunciation">/hi/</span></td>
+									<td><strong>hhI hhi</strong></td>
+									<td><span class="pronunciation">/ʁi/</span></td>
+									<td><span class="pronunciation">/ɣi/</span></td>
+								</tr>
+								<tr>
+									<td><strong>K k</strong></td>
+									<td><span class="pronunciation">/k/</span></td>
+									<td><span class="pronunciation">/k/</span></td>
+									<td><strong>hK hk</strong></td>
+									<td><span class="pronunciation">/g/</span></td>
+									<td><span class="pronunciation">/g/</span></td>
+									<td><strong>nK nk</strong></td>
+									<td><span class="pronunciation">/ŋ/</span></td>
+									<td><span class="pronunciation">/ŋ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>L l</strong></td>
+									<td><span class="pronunciation">/l/</span></td>
+									<td><span class="pronunciation">/l/</span></td>
+									<td><strong>hL hl</strong></td>
+									<td><span class="pronunciation">/j/</span></td>
+									<td><span class="pronunciation">/j/</span></td>
+									<td><strong>nL nl</strong></td>
+									<td><span class="pronunciation">/ɲ/</span></td>
+									<td><span class="pronunciation">/ɲ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ll ll</strong></td>
+									<td><span class="pronunciation">/ʎ/</span></td>
+									<td><span class="pronunciation">/j/</span></td>
+									<td><strong>hLl hll</strong></td>
+									<td><span class="pronunciation">/j/</span></td>
+									<td><span class="pronunciation">/j/</span></td>
+									<td><strong>nLl nll</strong></td>
+									<td><span class="pronunciation">/ɲ/</span></td>
+									<td><span class="pronunciation">/ɲ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>M m</strong></td>
+									<td><span class="pronunciation">/m/</span></td>
+									<td><span class="pronunciation">/m/</span></td>
+									<td><strong>Mh mh</strong></td>
+									<td><span class="pronunciation">/p/</span></td>
+									<td><span class="pronunciation">/p/</span></td>
+									<td><strong>hM hm</strong></td>
+									<td><span class="pronunciation">/b/</span></td>
+									<td><span class="pronunciation">/b/</span></td>
+								</tr>
+								<tr>
+									<td><strong>N n</strong></td>
+									<td><span class="pronunciation">/n/</span></td>
+									<td><span class="pronunciation">/n/</span></td>
+									<td><strong>Nh nh</strong></td>
+									<td><span class="pronunciation">/t/</span></td>
+									<td><span class="pronunciation">/t/</span></td>
+									<td><strong>hN hn</strong></td>
+									<td><span class="pronunciation">/d/</span></td>
+									<td><span class="pronunciation">/d/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ņ ņ</strong></td>
+									<td><span class="pronunciation">/ŋ/</span></td>
+									<td><span class="pronunciation">/ŋ/</span></td>
+									<td><strong>Ņh ņh</strong></td>
+									<td><span class="pronunciation">/k/</span></td>
+									<td><span class="pronunciation">/k/</span></td>
+									<td><strong>hŅ hņ</strong></td>
+									<td><span class="pronunciation">/g/</span></td>
+									<td><span class="pronunciation">/g/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ñ ñ</strong></td>
+									<td><span class="pronunciation">/ɲ/</span></td>
+									<td><span class="pronunciation">/ɲ/</span></td>
+									<td><strong>Ñh ñh</strong></td>
+									<td><span class="pronunciation">/l/</span></td>
+									<td><span class="pronunciation">/l/</span></td>
+									<td><strong>hÑ hñ</strong></td>
+									<td><span class="pronunciation">/j/</span></td>
+									<td><span class="pronunciation">/j/</span></td>
+								</tr>
+								<tr>
+									<td><strong>O o</strong></td>
+									<td><span class="pronunciation">/o/</span></td>
+									<td><span class="pronunciation">/o/</span></td>
+									<td><strong>hO ho</strong></td>
+									<td><span class="pronunciation">/ho/</span></td>
+									<td><span class="pronunciation">/ho/</span></td>
+									<td><strong>hhO hho</strong></td>
+									<td><span class="pronunciation">/ʁo/</span></td>
+									<td><span class="pronunciation">/ɣo/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Oe oe</strong></td>
+									<td><span class="pronunciation">/o̯e/ [œ]</span></td>
+									<td><span class="pronunciation">/œ/</span></td>
+									<td><strong>hOe hoe</strong></td>
+									<td><span class="pronunciation">/ho̯e/ [hœ]</span></td>
+									<td><span class="pronunciation">/hœ/</span></td>
+									<td><strong>hhOe hhoe</strong></td>
+									<td><span class="pronunciation">/ʁo̯e/ [ʁœ]</span></td>
+									<td><span class="pronunciation">/ɣœ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ou ou</strong></td>
+									<td><span class="pronunciation">/u/</span></td>
+									<td><span class="pronunciation">/u/</span></td>
+									<td><strong>hOu hou</strong></td>
+									<td><span class="pronunciation">/hu/</span></td>
+									<td><span class="pronunciation">/hu/</span></td>
+									<td><strong>hhOu hhou</strong></td>
+									<td><span class="pronunciation">/ʁu/</span></td>
+									<td><span class="pronunciation">/ɣu/</span></td>
+								</tr>
+								<tr>
+									<td><strong>P p</strong></td>
+									<td><span class="pronunciation">/p/</span></td>
+									<td><span class="pronunciation">/p/</span></td>
+									<td><strong>hP hp</strong></td>
+									<td><span class="pronunciation">/b/</span></td>
+									<td><span class="pronunciation">/b/</span></td>
+									<td><strong>nP np</strong></td>
+									<td><span class="pronunciation">/m/</span></td>
+									<td><span class="pronunciation">/m/</span></td>
+								</tr>
+								<tr>
+									<td><strong>R r</strong></td>
+									<td><span class="pronunciation">/r/</span></td>
+									<td><span class="pronunciation">/ɾ/</span></td>
+									<td><strong>Rh rh</strong></td>
+									<td><span class="pronunciation">/s/</span></td>
+									<td><span class="pronunciation">/s/</span></td>
+									<td><strong>hR hr</strong></td>
+									<td><span class="pronunciation">/z/</span></td>
+									<td><span class="pronunciation">/z/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Rl rl</strong></td>
+									<td><span class="pronunciation">/ɬ/</span></td>
+									<td><span class="pronunciation">/ɬ/</span></td>
+									<td><strong>Rhl rhl</strong></td>
+									<td><span class="pronunciation">/sl/</span></td>
+									<td><span class="pronunciation">/l/ (high rising tone)</span></td>
+									<td><strong>hRl hrl</strong></td>
+									<td><span class="pronunciation">/ʑ/</span></td>
+									<td><span class="pronunciation">/ʑ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>S s</strong></td>
+									<td><span class="pronunciation">/s/</span></td>
+									<td><span class="pronunciation">/s/</span></td>
+									<td><strong>hS hs</strong></td>
+									<td><span class="pronunciation">/z/</span></td>
+									<td><span class="pronunciation">/z/</span></td>
+									<td><strong>nS ns</strong></td>
+									<td><span class="pronunciation">/r/</span></td>
+									<td><span class="pronunciation">/ɾ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Si si</strong></td>
+									<td><span class="pronunciation">/si/ /ɕ(ə)/</span></td>
+									<td><span class="pronunciation">/si/ /ɕ(ə)/</span></td>
+									<td><strong>hSi hsi</strong></td>
+									<td><span class="pronunciation">/ʑi/ /ʑ(ə)/</span></td>
+									<td><span class="pronunciation">/ʑi/ /ʑ(ə)/</span></td>
+									<td><strong>nSi nsi</strong></td>
+									<td><span class="pronunciation">/ri/</span></td>
+									<td><span class="pronunciation">/ɾi/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Sy sy</strong></td>
+									<td><span class="pronunciation">/ɕ/</span></td>
+									<td><span class="pronunciation">/ɕ/</span></td>
+									<td><strong>hSy hsy</strong></td>
+									<td><span class="pronunciation">/ʑ/</span></td>
+									<td><span class="pronunciation">/ʑ/</span></td>
+									<td><strong>nSy nsy</strong></td>
+									<td><span class="pronunciation">/rʲ/</span></td>
+									<td><span class="pronunciation">/ɾʲ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>T t</strong></td>
+									<td><span class="pronunciation">/t/</span></td>
+									<td><span class="pronunciation">/t/</span></td>
+									<td><strong>hT ht</strong></td>
+									<td><span class="pronunciation">/d/</span></td>
+									<td><span class="pronunciation">/d/</span></td>
+									<td><strong>nT nt</strong></td>
+									<td><span class="pronunciation">/n/</span></td>
+									<td><span class="pronunciation">/n/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ts ts</strong></td>
+									<td><span class="pronunciation">/ts/</span></td>
+									<td><span class="pronunciation">/ts/</span></td>
+									<td><strong>hTs hts</strong></td>
+									<td><span class="pronunciation">/dz/</span></td>
+									<td><span class="pronunciation">/dz/</span></td>
+									<td><strong>nTs nts</strong></td>
+									<td><span class="pronunciation">/nr/</span></td>
+									<td><span class="pronunciation">/n/ (rising tone)</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ty ty</strong></td>
+									<td><span class="pronunciation">/tɕ/</span></td>
+									<td><span class="pronunciation">/tɕ/</span></td>
+									<td><strong>hTy hty</strong></td>
+									<td><span class="pronunciation">/dʑ/</span></td>
+									<td><span class="pronunciation">/dʑ/</span></td>
+									<td><strong>nTy nty</strong></td>
+									<td><span class="pronunciation">/ɲ/</span></td>
+									<td><span class="pronunciation">/ɲ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>U u</strong></td>
+									<td><span class="pronunciation">/u/</span></td>
+									<td><span class="pronunciation">/u/</span></td>
+									<td><strong>hU hu</strong></td>
+									<td><span class="pronunciation">/hu/</span></td>
+									<td><span class="pronunciation">/hu/</span></td>
+									<td><strong>hhU hhu</strong></td>
+									<td><span class="pronunciation">/ʁu/</span></td>
+									<td><span class="pronunciation">/ɣu/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ue ue</strong></td>
+									<td><span class="pronunciation">/u̯e/ [y]</span></td>
+									<td><span class="pronunciation">/y/</span></td>
+									<td><strong>hUe hue</strong></td>
+									<td><span class="pronunciation">/hu̯e/ [hy]</span></td>
+									<td><span class="pronunciation">/hy/</span></td>
+									<td><strong>hhUe hhue</strong></td>
+									<td><span class="pronunciation">/ʁu̯e/ [ʁy]</span></td>
+									<td><span class="pronunciation">/ɣy/</span></td>
+								</tr>
+								<tr>
+									<td><strong>V v</strong></td>
+									<td><span class="pronunciation">/β/</span></td>
+									<td><span class="pronunciation">/v/</span></td>
+									<td><strong>nV nv</strong></td>
+									<td><span class="pronunciation">/w/</span></td>
+									<td><span class="pronunciation">/ʋ/</span></td>
+									<td><strong>Vh vh</strong></td>
+									<td><span class="pronunciation">/ɸ/</span></td>
+									<td><span class="pronunciation">/f/</span></td>
+								</tr>
+								<tr>
+									<td><strong>W w</strong></td>
+									<td><span class="pronunciation">/w/</span></td>
+									<td><span class="pronunciation">/ʋ/</span></td>
+									<td><strong>Wh wh</strong></td>
+									<td><span class="pronunciation">/ɸ/</span></td>
+									<td><span class="pronunciation">/f/</span></td>
+									<td><strong>hW hw</strong></td>
+									<td><span class="pronunciation">/β/</span></td>
+									<td><span class="pronunciation">/v/</span></td>
+								</tr>
+								<tr>
+									<td><strong>X x</strong></td>
+									<td><span class="pronunciation">/ʁ/</span></td>
+									<td><span class="pronunciation">/ɣ/</span></td>
+									<td><strong>nX nx</strong></td>
+									<td><span class="pronunciation">/ʔ/</span></td>
+									<td><span class="pronunciation">/ʔ/</span></td>
+									<td><strong>Xh xh</strong></td>
+									<td><span class="pronunciation">/h/</span></td>
+									<td><span class="pronunciation">/h/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Y y</strong></td>
+									<td><span class="pronunciation">/j/</span></td>
+									<td><span class="pronunciation">/j/</span></td>
+									<td><strong>nY ny</strong></td>
+									<td><span class="pronunciation">/ɲ/</span></td>
+									<td><span class="pronunciation">/ɲ/</span></td>
+									<td><strong>Yh yh</strong></td>
+									<td><span class="pronunciation">/l/</span></td>
+									<td><span class="pronunciation">/l/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Yu yu</strong></td>
+									<td><span class="pronunciation">/ju/ [ɥ(u)]</span></td>
+									<td><span class="pronunciation">/ɥ(u)/</span></td>
+									<td><strong>nYu nyu</strong></td>
+									<td><span class="pronunciation">/ɲu/ [ɲɥ(u)]</span></td>
+									<td><span class="pronunciation">/ɲu/ [ɲɥ(u)]</span></td>
+									<td><strong>Yhu yhu</strong></td>
+									<td><span class="pronunciation">/lu/ /lu̯/</span></td>
+									<td><span class="pronunciation">/lu/ /lu̯/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Z z</strong></td>
+									<td><span class="pronunciation">/z/</span></td>
+									<td><span class="pronunciation">/z/</span></td>
+									<td><strong>nZ nz</strong></td>
+									<td><span class="pronunciation">/r/</span></td>
+									<td><span class="pronunciation">/ɾ/</span></td>
+									<td><strong>Zh zh</strong></td>
+									<td><span class="pronunciation">/s/</span></td>
+									<td><span class="pronunciation">/s/</span></td>
+								</tr>
+								<tr>
+									<td><strong>Zy zy</strong></td>
+									<td><span class="pronunciation">/ʑ/</span></td>
+									<td><span class="pronunciation">/ʑ/</span></td>
+									<td><strong>nZy nzy</strong></td>
+									<td><span class="pronunciation">/rʲ/</span></td>
+									<td><span class="pronunciation">/ɾʲ/</span></td>
+									<td><strong>Zhy zhy</strong></td>
+									<td><span class="pronunciation">/ɕ/</span></td>
+									<td><span class="pronunciation">/ɕ/</span></td>
+								</tr>
+								<tr>
+									<td><strong>ə</strong></td>
+									<td><span class="pronunciation">/(ə)/</span></td>
+									<td><span class="pronunciation">/(ə)/</span></td>
+									<td colspan="6"><strong>No conjugations as no word starts with this letter.</strong></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts -->
+    <script src="../common/navigation.js"></script>
+	<script src="alphabet/script.js"></script>
+
+</body>
+</html>

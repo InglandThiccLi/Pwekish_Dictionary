@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pwekish Dictionary - About</title>
+    <title>Pwekish Dictionary - Affixes</title>
 
     <!-- Icon -->
     <link rel="icon" type="image/x-icon" href="../common/favicon.ico">
@@ -19,17 +19,15 @@
 
     <!-- Styles -->
 	<link href="../common/style.css" rel="stylesheet">
+    <link href="../common/article.css" rel="stylesheet">
 	<link href="../common/navigation.css" rel="stylesheet">
-	<link href="../common/article.css" rel="stylesheet">
+	<link href="../common/table.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Background image -->
-    <div class="background-image"></div>
-
     <!-- Title -->
     <div class="page-title row">
         <div class="col-12 text-center">
-            <h1 class="page-title-text">About</h1>
+            <h1 class="page-title-text">Pwekish Affixes</h1>
         </div>
     </div>
 
@@ -103,42 +101,77 @@
     </nav>
 
     <hr>
-
+	
+	<!-- Content -->
     <div class="article-container">
         <div class="article-passage">
-            <h3>🌟 Welcome to the Pwekish Online Dictionary! 📚</h3>
-            <p>
-				At our website, you’ll find the most comprehensive and up-to-date resources for the Pwekish language. 
-				Key features include word searching, Pwekish learning materials, and e-books reading. 
-				We aim to create a user-friendly platform that encourages the public to explore and appreciate the beauty of language. 
-				We hope to ignite your passion for learning foreign languages, diving into the fascinating world of linguistics, 
-				or even inspiring you to craft your own unique language from scratch!
-            </p>
-            <p>
-                As a newly established platform launched on June 2, 2025, many features are still in development. 
-				We are continuously enhancing our website and extending our Pwekish word database. 
-				Stay tuned for the updates!
-            </p>
-        </div>
+			<h3>Introduction</h3>
+			<p>
+				Pwekish employs a wide range of affixes in both word formation and the expression of abstract ideas.
+				Affixes in Pwekish are either prefixes, which are added to the beginning of a word, or suffixes, which are attached to the end.
+				They not only allows Pwekish to form numerous new words from a small set of roots, but also play an important role in Pwekish grammar. 
+				Some affixes provide spatial or temporal information to a sentence, while others modify a word's part of speech, or even alter the sentence structure.
+				In a nutshell, affixes are central to Pwekish as it grants flexibility and extendability to the language.
+			</p>
 
-        <div class="article-passage">
-            <h3>What is Pwekish?</h3>
-            <p>
-                Pwekish is a constructed language developed by CheckedMorrow and InglandThiccLi. 
-				It belongs to the Pwekian language family, which has no direct ties to any major language families worldwide. 
-				Characterized by its unique grammatical structure and an exotic array of root words, Pwekish is an agglutinative language. 
-				This means it allows for the combination of word elements to create long, complex words, 
-				enabling a wide variety of Pwekish-originated terms to emerge from a limited set of basic roots.
-            </p>
+			<h3>Effect on Stress</h3>
 			<p>
-				Additionally, Pwekish features four distinct writing systems: “BentolRomak,” “Punloy BentolPwek,” “Kentan BentolPwek,” and “Handzi.” 
-				The latter three are often used in conjunction within texts, while “BentolRomak” is typically employed on its own. 
-				These elements contribute to the distinctiveness of the Pwekish language.
+				Pwekish words are usually stressed on the second-last syllable. 
+				There are some exceptions, as indicated by an accent mark (◌́) on vowel letters.
+				The addition of some affixes may shift the stress pattern of the word, while some have no effect on the stress patterns of words.
+				We can classify the affixes into type S and type T.
 			</p>
 			<p>
-				Thanks for visiting our website! Have a nice linguistic journey! 🌍✨
+				Type S means the stress pattern of the resultant word remains the same as before after adding the affix.
+				For example, the stress of "dip" is on itself. If we add "fisi-", a type S prefix, to the word and forming "fisidip", 
+				the stress is still on "dip".
 			</p>
-        </div>
+			<p>
+				Type T means the stress pattern of the resultant word is changed after adding the affix.
+				For example, the stress of "fisidip" is on "dip". If we add "kut-", a type T prefix, to the word and forming "kutfisidip", 
+				the stress will change and fall on "fisi", as words are stressed on the second-last syllable in the case that no accent mark presents.
+			</p>
+			<p>
+				Below is a table displaying the affixes of Pwekish.
+			</p>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="" 
+							aria-expanded="true" 
+							aria-controls="affixes_table_collapse"
+							id="affixes_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold" id="affixes_table_toggle_title">Click to View</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="affixes_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse" id="affixes_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header">Affix</th>
+									<th class="table-header">Pronunciation<br>(Standard)</th>
+									<th class="table-header">Pronunciation<br>(Sekritnkaynresian)</th>
+									<th class="table-header">Function and Meaning</th>
+									<th class="table-header">Type</th>
+									<th class="table-header">Example</th>
+									<th class="table-header">BentolPwek</th>
+									<th class="table-header">Middle Pwekish</th>
+								</tr>
+							</thead>
+							<tbody id="affixes_table_content">
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
     </div>
 
     <!-- Bootstrap JS Bundle with Popper -->
@@ -146,6 +179,7 @@
     
     <!-- Scripts -->
     <script src="../common/navigation.js"></script>
+	<script src="affixes/script.js"></script>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pwekish Dictionary - About</title>
+    <title>Pwekish Dictionary - Idioms</title>
 
     <!-- Icon -->
     <link rel="icon" type="image/x-icon" href="../common/favicon.ico">
@@ -19,17 +19,15 @@
 
     <!-- Styles -->
 	<link href="../common/style.css" rel="stylesheet">
+    <link href="../common/article.css" rel="stylesheet">
 	<link href="../common/navigation.css" rel="stylesheet">
-	<link href="../common/article.css" rel="stylesheet">
+	<link href="../common/table.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Background image -->
-    <div class="background-image"></div>
-
     <!-- Title -->
     <div class="page-title row">
         <div class="col-12 text-center">
-            <h1 class="page-title-text">About</h1>
+            <h1 class="page-title-text">Pwekish Idioms</h1>
         </div>
     </div>
 
@@ -103,42 +101,63 @@
     </nav>
 
     <hr>
-
+	
+	<!-- Content -->
     <div class="article-container">
         <div class="article-passage">
-            <h3>🌟 Welcome to the Pwekish Online Dictionary! 📚</h3>
-            <p>
-				At our website, you’ll find the most comprehensive and up-to-date resources for the Pwekish language. 
-				Key features include word searching, Pwekish learning materials, and e-books reading. 
-				We aim to create a user-friendly platform that encourages the public to explore and appreciate the beauty of language. 
-				We hope to ignite your passion for learning foreign languages, diving into the fascinating world of linguistics, 
-				or even inspiring you to craft your own unique language from scratch!
-            </p>
-            <p>
-                As a newly established platform launched on June 2, 2025, many features are still in development. 
-				We are continuously enhancing our website and extending our Pwekish word database. 
-				Stay tuned for the updates!
-            </p>
-        </div>
-
-        <div class="article-passage">
-            <h3>What is Pwekish?</h3>
-            <p>
-                Pwekish is a constructed language developed by CheckedMorrow and InglandThiccLi. 
-				It belongs to the Pwekian language family, which has no direct ties to any major language families worldwide. 
-				Characterized by its unique grammatical structure and an exotic array of root words, Pwekish is an agglutinative language. 
-				This means it allows for the combination of word elements to create long, complex words, 
-				enabling a wide variety of Pwekish-originated terms to emerge from a limited set of basic roots.
-            </p>
+			<h3>Idioms</h3>
 			<p>
-				Additionally, Pwekish features four distinct writing systems: “BentolRomak,” “Punloy BentolPwek,” “Kentan BentolPwek,” and “Handzi.” 
-				The latter three are often used in conjunction within texts, while “BentolRomak” is typically employed on its own. 
-				These elements contribute to the distinctiveness of the Pwekish language.
+				Pwekish idioms are figurative phrases or short sentence which often backed with a story
+				or requires some level of understanding to the Pwekish culture.   
+				Most of the time, these expressions are linguistically intricate and deeply evocative.
+			</p>
+			<p>	
+				Idioms are often used in creative writing, though some of them are used frequently in daily conversation.
+				In writing, they are traditionally rendered in "Handzi" form with some "BentolPwek". 
+				Yet, for simplicity and accessibility, using "BentolRomak" is also accepted nowadays.
 			</p>
 			<p>
-				Thanks for visiting our website! Have a nice linguistic journey! 🌍✨
+				To sum up, Pwekish idioms are highly cultural expressions which showcase not only the creativity of the language,
+				but also the versatility of the language's structure and script.
 			</p>
-        </div>
+			<p>
+				Below is a table displaying the idioms of Pwekish.
+			</p>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="" 
+							aria-expanded="true" 
+							aria-controls="idioms_table_collapse"
+							id="idioms_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold" id="idioms_table_toggle_title">Click to View</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="idioms_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse" id="idioms_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header">Idiom</th>
+									<th class="table-header">Meaning</th>
+									<th class="table-header">Explanation</th>
+									<th class="table-header">BentolPwek</th>
+									<th class="table-header">Middle Pwekish</th>
+								</tr>
+							</thead>
+							<tbody id="idioms_table_content">
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
     </div>
 
     <!-- Bootstrap JS Bundle with Popper -->
@@ -146,6 +165,7 @@
     
     <!-- Scripts -->
     <script src="../common/navigation.js"></script>
+	<script src="idioms/script.js"></script>
 
 </body>
 </html>
