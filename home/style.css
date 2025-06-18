@@ -294,16 +294,16 @@ body {
     }
 
     .search-section {
-		background: #666;
+		background: #2d3748;
     }
 
     .action-button {
-		background: black;
+		background-color: #2d3748;
 		border-color: white;
     }
 
     .action-button:hover {
-        background: #555;
+		background-color: #3d4758;
         color: white;
     }
 }

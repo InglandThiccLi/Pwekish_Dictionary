@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Pwekish - Chapter 1</title>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="../../common/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Styles -->
+	<link href="../../common/style.css" rel="stylesheet">
+	<link href="../../common/navigation.css" rel="stylesheet">
+	<link href="../../common/article.css" rel="stylesheet">
+	<link href="../../common/table.css" rel="stylesheet">
+	<link href="../../common/audio_play_button.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Background image -->
+    <div class="background-image"></div>
+
+    <!-- Title -->
+    <div class="page-title row">
+        <div class="col-12 text-center">
+            <h1 class="page-title-text">Part 3: Simple sentences</h1>
+        </div>
+    </div>
+
+    <!-- Overlay for dimming -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Menu button -->
+    <button id="menuBtn" class="menu-btn">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <!-- Side navigation -->
+    <nav id="sideNav" class="side-nav deep"></nav>
+
+    <hr>
+
+    <div class="article-container">
+		<div class="article-passage">
+            <h3>Calling Myself</h3>
+			<p>
+				Before we learn the words, we always want to refer to ourselves. In Pwekish, "I" or "me" is spelled "ņra", pronounced as /ŋra/
+				<button class="audio-play-btn" data-src="../../audio/words/ņra.mp3">
+					<i class="bi bi-play-fill"></i>
+				</button>
+				.
+			</p>
+		</div>
+        <div class="article-passage">
+            <h3>Nouns</h3>
+			<p>
+				Once we have the ego, let's learn a few nouns (words that represent things) that we often encounter.
+			</p>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#noun_table_collapse" 
+							aria-expanded="true" 
+							aria-controls="noun_table_collapse"
+							id="noun_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold" id="noun_table_title">Click to show the table</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="noun_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse" id="noun_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header">Word</th>
+									<th class="table-header">Pronunciation</th>
+									<th class="table-header">Meaning</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>awú</strong></td>
+									<td class="text-center"><span class="pronunciation">/aˈwu/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/awú.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">dog</span></td>
+								</tr>
+								<tr>
+									<td><strong>baln</strong></td>
+									<td class="text-center"><span class="pronunciation">/baln/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/baln.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">book</span></td>
+								</tr>
+								<tr>
+									<td><strong>bimbo</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈbimbo/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/bimbo.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">apple</span></td>
+								</tr>
+								<tr>
+									<td><strong>dorn</strong></td>
+									<td class="text-center"><span class="pronunciation">/dorn/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/dorn.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">house; home</span></td>
+								</tr>
+								<tr>
+									<td><strong>má</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈma/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/má.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">my mum</span></td>
+								</tr>
+								<tr>
+									<td><strong>nur</strong></td>
+									<td class="text-center"><span class="pronunciation">/nur/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/nur.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">people; human</span></td>
+								</tr>
+								<tr>
+									<td><strong>pá</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈpa/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/pá.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">my dad</span></td>
+								</tr>
+								<tr>
+									<td><strong>skod</strong></td>
+									<td class="text-center"><span class="pronunciation">/skod/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/skod.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">pen</span></td>
+								</tr>
+								<tr>
+									<td><strong>tolontenPwék</strong></td>
+									<td class="text-center"><span class="pronunciation">/tolontenˈpʷek/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/tolontenPwék.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">Pwekish</span></td>
+								</tr>
+								<tr>
+									<td><strong>zim</strong></td>
+									<td class="text-center"><span class="pronunciation">/zim/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/zim.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">money</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<p>
+				You may have noticed some words have an accent marker on top of the letter (like ú in awú). 
+				They shows the stress of a word. If no accent marker presents, the stress falls on the <b>second last syllable</b> by default.
+			</p>
+        </div>
+		<div class="article-passage">
+			<h3>Verbs</h3>
+			<p>
+				After having the nouns, we need verbs, the words for action, to form a complete sentence.
+			</p>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#verb_table_collapse" 
+							aria-expanded="true" 
+							aria-controls="verb_table_collapse"
+							id="noun_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold" id="verb_table_title">Click to show the table</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="verb_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse" id="verb_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header">Word</th>
+									<th class="table-header">Pronunciation</th>
+									<th class="table-header">Meaning</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>bal</strong></td>
+									<td class="text-center"><span class="pronunciation">/bal/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/bal.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">to read</span></td>
+								</tr>
+								<tr>
+									<td><strong>bay</strong></td>
+									<td class="text-center"><span class="pronunciation">/baj/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/bay.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">to see</span></td>
+								</tr>
+								<tr>
+									<td><strong>dip</strong></td>
+									<td class="text-center"><span class="pronunciation">/dip/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/dip.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">to eat</span></td>
+								</tr>
+								<tr>
+									<td><strong>koko</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈkoko/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/koko.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">to play</span></td>
+								</tr>
+								<tr>
+									<td><strong>masul</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈmasul/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/masul.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">to sleep</span></td>
+								</tr>
+								<tr>
+									<td><strong>mor</strong></td>
+									<td class="text-center"><span class="pronunciation">/mor/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/mor.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">to go</span></td>
+								</tr>
+								<tr>
+									<td><strong>nuke</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈnuke/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/nuke.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">to like</span></td>
+								</tr>
+								<tr>
+									<td><strong>pe</strong></td>
+									<td class="text-center"><span class="pronunciation">/pe/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/pe.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">to be</span></td>
+								</tr>
+								<tr>
+									<td><strong>sano</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈsano/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/sano.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">to have</span></td>
+								</tr>
+								<tr>
+									<td><strong>tolo</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈtolo/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/tolo.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">to speak</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="article-passage">
+			<h3>Simple sentences</h3>
+			<p>
+				The basic sentence structure of Pwekish is <b>SOV</b>, that is, instead of saying "I eat an apple", we say <b>"I an apple eat"</b>.
+				Here are some sample sentences we can form using "ņra" ("I"), and the nouns and verbs we have learned.
+			</p>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#sentence_table_collapse" 
+							aria-expanded="true" 
+							aria-controls="sentence_table_collapse"
+							id="noun_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold" id="sentence_table_title">Click to show the table</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="sentence_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse" id="sentence_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header">Sentence</th>
+									<th class="table-header">Meaning</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>Ņra bimbo dip.</strong></td>
+									<td><span class="meaning">I eat an apple.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ņra ma nuke.</strong></td>
+									<td><span class="meaning">I like my mum.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ņra nur pe.</strong></td>
+									<td><span class="meaning">I am a human.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ņra baln bal.</strong></td>
+									<td><span class="meaning">I read a book.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ņra sewu bay.</strong></td>
+									<td><span class="meaning">I see a fish.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ņra zim sano.</strong></td>
+									<td><span class="meaning">I have money.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ņra awú sano.</strong></td>
+									<td><span class="meaning">I have a dog.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ņra masul.</strong></td>
+									<td><span class="meaning">I sleep.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ņra dorn mor.</strong></td>
+									<td><span class="meaning">I go home.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ņra tolontenPwék tolo.</strong></td>
+									<td><span class="meaning">I speak Pwekish.</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<p>
+				Note that Pwekish doesn't have words like "a", "an", "the". You just omit these articles when translating to Pwekish.
+			</p>
+		</div>
+		<div class="container-fluid fun-fact-container">
+			<div class="card h-100 shadow-sm fun-fact">
+				<div class="card-body">
+					<h5 class="card-title">Fun Fact:</h5>
+					<p class="card-text">
+						In Pwekish, we have the verb for "go home" ("domor").<br>
+						So the sentence "Ņra dorn mor" can be written as "Ņra domor".
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="article-passage">
+			<h3>Exercise</h3>
+			<p class="no-indentation">
+				1. Translate the following sentences into Pwekish.
+			</p>
+			<p class="no-indentation">
+				a. I like my dad.<br>
+				b. I see the apple.<br>
+				c. I have a pen.<br>
+				d. I am a book.<br>
+				e. I play.
+			</p>
+			<button class="badge bg-primary" 
+				type="button" 
+				data-bs-toggle="collapse" 
+				data-bs-target="#ex1_answer" 
+				aria-collapsed="true" 
+				aria-controls="ex1_answer"
+				id="ex1_toggle_btn">
+				Show Answers
+			</button>
+			<p id="ex1_answer" class="collapse no-indentation">
+				a. Ņra pá nuke.<br>
+				b. Ņra bimbo bay.<br>
+				c. Ņra skod sano.<br>
+				d. Ņra baln pe.<br>
+				e. Ņra koko.
+			</p>
+			<br>
+			<br>
+			<p class="no-indentation">
+				2. Translate the following sentences into English.
+			</p>
+			<p class="no-indentation">
+				a. Ņra bimbo sano.<br>
+				b. Ņra sewu nuke.<br>
+				c. Ņra tolotenPwék tolo.<br>
+				d. Ņra zim bay.<br>
+				e. Ņra bal.
+			</p>
+			<button class="badge bg-primary" 
+				type="button" 
+				data-bs-toggle="collapse" 
+				data-bs-target="#ex2_answer" 
+				aria-collapsed="true" 
+				aria-controls="ex1_answer"
+				id="ex2_toggle_btn">
+				Show Answers
+			</button>
+			<p id="ex2_answer" class="collapse no-indentation">
+				a. I have an apple.<br>
+				b. I like fish.<br>
+				c. I speak Pwekish.<br>
+				d. I see money.<br>
+				e. I read.
+			</p>
+		</div>
+    </div>
+	
+	<div class="buttons-section">
+		<div class="row g-3">
+			<div class="col-lg col-md-6 col-12">
+				<a href="part2.html">
+					<button class="action-button"><i class="bi bi-arrow-left"></i> Part 2: Compound letters</button>
+				</a>
+			</div>
+			<div class="col-lg col-md-6 col-12">
+				<a href="index.html">
+					<button class="action-button"><i class="bi bi-arrow-return-left"></i> Return to Introductory Page</button>
+				</a>
+			</div>
+			<div class="col-lg col-md-6 col-12">
+				<a href="part4.html">
+					<button class="action-button">Part 4: Introduction to Personal Verb Initial Mutation <i class="bi bi-arrow-right"></i></button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts -->
+	<script src="../../common/audio_play_button.js"></script>
+    <script src="../../common/navigation.js"></script>
+	<script src="part3.js"></script>
+
+</body>
+</html>

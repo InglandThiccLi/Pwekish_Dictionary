@@ -15,6 +15,11 @@ https://inglopedia.fandom.com/wiki/Inglopedia_Wiki
 - Other features will be available soon.
 
 ## Updates
+- v1.3 (2025-06-18):
+	1. Add Pwekish Learning Portal and learning material for Chapter 1.
+	2. Add accordion for "learn" section in the side navigation.
+	3. Show the "learn" button on home page and navigation.
+	4. Change favicon.
 - v1.2 (2025-06-10):
 	1. Add more information for the dictionary (Alphabet, Affixes, Idioms, Chemistry).
 	2. Add accordion for "more info" section in the side navigation.

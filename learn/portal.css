@@ -1,0 +1,37 @@
+.chapter-list-container {
+	width: 80%;
+	justify-self: center;
+	
+}
+
+.chapter-list-item:hover {
+	background-color: #f5f5f5;
+}
+
+.chapter-button {
+	font-size: 20px;
+	color: orange;
+}
+
+.chapter-button:hover {
+	color: #FF8C00;
+}
+
+@media (prefers-color-scheme: dark) {
+	.chapter-button {
+		font-size: 20px;
+		color: #eee;
+	}
+
+	.chapter-button:hover {
+		color: #fff;
+	}
+	
+	.chapter-list-item {
+		background-color: #2d3748;
+	}
+
+	.chapter-list-item:hover {
+		background-color: #3d4758;
+	}
+}

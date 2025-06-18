@@ -1,0 +1,52 @@
+.card {
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-title {
+    color: #495057;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.btn-primary {
+    background-color: #5D5CDE;
+    border-color: #5D5CDE;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #4a49c7;
+    border-color: #4a49c7;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .card {
+        background-color: #2d3748;
+        border-color: #4a5568;
+    }
+    
+    .card-title {
+        color: #e2e8f0;
+    }
+    
+    .card-text {
+        color: #cbd5e0;
+    }
+}

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Pwekish - Chapter 1</title>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="../../common/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Styles -->
+	<link href="../../common/style.css" rel="stylesheet">
+	<link href="../../common/navigation.css" rel="stylesheet">
+	<link href="../../common/article.css" rel="stylesheet">
+	<link href="../../common/table.css" rel="stylesheet">
+	<link href="../../common/audio_play_button.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Background image -->
+    <div class="background-image"></div>
+
+    <!-- Title -->
+    <div class="page-title row">
+        <div class="col-12 text-center">
+            <h1 class="page-title-text">Part 1: Alphabet of bentolRomak</h1>
+        </div>
+    </div>
+
+    <!-- Overlay for dimming -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Menu button -->
+    <button id="menuBtn" class="menu-btn">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <!-- Side navigation -->
+    <nav id="sideNav" class="side-nav deep"></nav>
+
+    <hr>
+
+    <div class="article-container">
+		<div class="article-passage">
+            <h3>Introduction</h3>
+			<p>
+				Usually, when we learn a new language, we start with the alphabet. 
+				This is also true for Pwekish. Pwekish has 2 sets of writing system, bentolRomak and bentolPwék. 
+				We will start with bentolRomak as it is easier and more similar to English.
+			</p>
+			<p>
+				BentolRomak consist of a set of latin letters. 
+				It is the most commonly used script due its simplicity. 
+				There are total 28 letters and each of them represents only <b>one</b> sound.
+			</p>
+		</div>
+        <div class="article-passage">
+            <h3>The Alphabet Table</h3>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#alphabet_table_collapse" 
+							aria-expanded="true" 
+							aria-controls="alphabet_table_collapse"
+							id="alphabet_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold" id="alphabet_table_title">Click to show the table</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="alphabet_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse" id="alphabet_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header">Letter</th>
+									<th class="table-header">Pronunciation</th>
+									<th class="table-header">Letter Name</th>
+									<th class="table-header">Letter Pronunciation</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>A a</strong></td>
+									<td class="text-center"><span class="pronunciation">/a/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/a.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>aki</td>
+									<td class="text-center"><span class="pronunciation">/ˈaki/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/aki.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>B b</strong></td>
+									<td class="text-center"><span class="pronunciation">/b/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/b.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>bayn</td>
+									<td class="text-center"><span class="pronunciation">/bajn/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/bayn.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>C c</strong></td>
+									<td class="text-center"><span class="pronunciation">/s/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/s.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>cidu</td>
+									<td class="text-center"><span class="pronunciation">/ˈsidu/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/cidu.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>D d</strong></td>
+									<td class="text-center"><span class="pronunciation">/d/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/d.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>do</td>
+									<td class="text-center"><span class="pronunciation">/do/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/do.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>E e</strong></td>
+									<td class="text-center"><span class="pronunciation">/e/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/e.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>edu</td>
+									<td class="text-center"><span class="pronunciation">/ˈedu/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/edu.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>F f</strong></td>
+									<td class="text-center"><span class="pronunciation">/ɸ/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/f.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>fisn</td>
+									<td class="text-center"><span class="pronunciation">/ˈɸisn̩/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/fisn.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>G g</strong></td>
+									<td class="text-center"><span class="pronunciation">/g/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/g.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>gun</td>
+									<td class="text-center"><span class="pronunciation">/gun/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/gun.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>H h</strong></td>
+									<td class="text-center"><span class="pronunciation">/h/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/h.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>hew</td>
+									<td class="text-center"><span class="pronunciation">/hew/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/hew.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>I i</strong></td>
+									<td class="text-center"><span class="pronunciation">/i/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/i.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>ito</td>
+									<td class="text-center"><span class="pronunciation">/ˈito/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/ito.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>K k</strong></td>
+									<td class="text-center"><span class="pronunciation">/k/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/k.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>kayn</td>
+									<td class="text-center"><span class="pronunciation">/kajn/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/kayn.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>L l</strong></td>
+									<td class="text-center"><span class="pronunciation">/l/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/l.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>loy</td>
+									<td class="text-center"><span class="pronunciation">/loj/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/loy.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>M m</strong></td>
+									<td class="text-center"><span class="pronunciation">/m/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/m.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>ma</td>
+									<td class="text-center"><span class="pronunciation">/ma/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/ma.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>N n</strong></td>
+									<td class="text-center"><span class="pronunciation">/n/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/n.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>nur</td>
+									<td class="text-center"><span class="pronunciation">/nur/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/nur.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Ņ ņ</strong></td>
+									<td class="text-center"><span class="pronunciation">/ŋ/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/ņ.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>ņiw</td>
+									<td class="text-center"><span class="pronunciation">/ŋiw/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/ņiw.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Ñ ñ</strong></td>
+									<td class="text-center"><span class="pronunciation">/ɲ/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/ñ.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>ñep</td>
+									<td class="text-center"><span class="pronunciation">/ɲep/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/ñep.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>O o</strong></td>
+									<td class="text-center"><span class="pronunciation">/o/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/o.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>orlo</td>
+									<td class="text-center"><span class="pronunciation">/ˈoɬo/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/orlo.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>P p</strong></td>
+									<td class="text-center"><span class="pronunciation">/p/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/p.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>pak</td>
+									<td class="text-center"><span class="pronunciation">/pak/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/pak.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>R r</strong></td>
+									<td class="text-center"><span class="pronunciation">/r/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/r.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>rin</td>
+									<td class="text-center"><span class="pronunciation">/rin/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/rin.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>S s</strong></td>
+									<td class="text-center"><span class="pronunciation">/s/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/s.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>sil</td>
+									<td class="text-center"><span class="pronunciation">/sil/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/sil.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>T t</strong></td>
+									<td class="text-center"><span class="pronunciation">/t/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/t.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>tolo</td>
+									<td class="text-center"><span class="pronunciation">/ˈtolo/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/tolo.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>U u</strong></td>
+									<td class="text-center"><span class="pronunciation">/u/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/u.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>umi</td>
+									<td class="text-center"><span class="pronunciation">/ˈumi/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/umi.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>V v</strong></td>
+									<td class="text-center"><span class="pronunciation">/β/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/v.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>vur</td>
+									<td class="text-center"><span class="pronunciation">/βur/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/vur.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>W w</strong></td>
+									<td class="text-center"><span class="pronunciation">/w/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/w.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>wob</td>
+									<td class="text-center"><span class="pronunciation">/wob/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/wob.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>X x</strong></td>
+									<td class="text-center"><span class="pronunciation">/ʁ/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/x.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>xun</td>
+									<td class="text-center"><span class="pronunciation">/ʁun/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/xun.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Y y</strong></td>
+									<td class="text-center"><span class="pronunciation">/j/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/y.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>yi</td>
+									<td class="text-center"><span class="pronunciation">/ji/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/yi.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Z z</strong></td>
+									<td class="text-center"><span class="pronunciation">/z/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/z.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>za</td>
+									<td class="text-center"><span class="pronunciation">/za/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/za.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>` '</strong></td>
+									<td class="text-center"><span class="pronunciation">/ʔ/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/'.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>'yaņ</td>
+									<td class="text-center"><span class="pronunciation">/ʔʲaŋ/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/'yaņ.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>ə</strong></td>
+									<td class="text-center"><span class="pronunciation">/ə/</span>
+										<button class="audio-play-btn" data-src="../../audio/phonemes/ə.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td>tem</td>
+									<td class="text-center"><span class="pronunciation">/tem/</span>
+										<button class="audio-play-btn" data-src="../../audio/name_of_letters/tem.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+        </div>
+		<div class="article-passage">
+			<h3>Useful resources</h3>
+			<p>
+				Some of the pronunciation does not exist in English (like those represented by "r", "x", "f", "v") 
+				and can be challenging to pronounce. You may find the following resources useful to help you practice.
+			</p>
+			<div class="row justify-content-between">
+				<div class="col-3 flex-fill">
+				 	<div class="card p-2 text-center">
+						<a target="_blank" href="https://www.youtube.com/watch?v=XTHyCavzOMA&ab_channel=GlossikaPhonics">F f /ɸ/</a>
+					</div>
+				</div>
+				<div class="col-3 flex-fill">
+					<div class="card p-2 text-center">
+					   <a target="_blank" href="https://www.youtube.com/watch?v=LiHHQJgEfJI&ab_channel=GlossikaPhonics">Ņ ņ /ŋ/</a>
+				    </div>
+			    </div>
+			    <div class="col-3 flex-fill">
+					<div class="card p-2 text-center">
+				   		<a target="_blank" href="https://www.youtube.com/watch?v=N0NIZNgVKaY&ab_channel=GlossikaPhonics">Ñ ñ /ɲ/</a>
+					</div>
+			    </div>
+			    <div class="col-3 flex-fill">
+					<div class="card p-2 text-center">
+				  		<a target="_blank" href="https://www.youtube.com/watch?v=uguCSUaA45k&ab_channel=GlossikaPhonics">R r /r/</a>
+					</div>
+			    </div>
+				<div class="col-3 flex-fill">
+					<div class="card p-2 text-center">
+				  		<a target="_blank" href="https://www.youtube.com/watch?v=1tTKGmipFFQ&ab_channel=GlossikaPhonics">V v /β/</a>
+					</div>
+			    </div>
+				<div class="col-3 flex-fill">
+					<div class="card p-2 text-center">
+						<a target="_blank" href="https://www.youtube.com/watch?v=T1TFuZMYoeQ&ab_channel=UbcVISIBLESPEECH">X x /ʁ/</a>
+					</div>
+				</div>
+				<div class="col-3 flex-fill">
+					<div class="card p-2 text-center">
+						<a target="_blank" href="https://www.youtube.com/watch?v=Nl-MflTm-Mo&ab_channel=GlossikaPhonics">` ' /ʔ/</a>
+					</div>
+				</div>
+		   	</div>
+		</div>
+		<div class="container-fluid fun-fact-container">
+			<div class="card h-100 shadow-sm fun-fact">
+				<div class="card-body">
+					<h5 class="card-title">Fun Fact:</h5>
+					<p class="card-text">
+						` ' is the only letter that uses symbol (the apostrophe) instead of latin character.<br>
+						No word starts with the letter "ə". And it's also the only letter without capital form.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="article-passage">
+			<h3>Exercise</h3>
+			<p class="no-indentation">
+				1. Write down the name of the following letters.
+			</p>
+			
+			<p>
+				<span class="me-3">A D F I K Ñ S V Y `</span>
+				<button class="badge bg-primary" 
+						type="button" 
+						data-bs-toggle="collapse" 
+						data-bs-target="#ex1_answer" 
+						aria-collapsed="true" 
+						aria-controls="ex1_answer"
+						id="ex1_toggle_btn">
+						Show Answers
+				</button>
+			</p>
+			<p id="ex1_answer" class="collapse no-indentation">
+				A: aki D: do F: fisn I: ito <br> 
+				K: kayn Ñ: ñep/nyep S: sil V: vur <br>
+				Y: yi `: 'yaņ/'yang
+			</p>
+			<br>
+			<p class="no-indentation">
+				2. Match the letters to their pronunciation.
+			</p>
+			<p>
+				<span class="me-3"> C F N Ņ Ñ O P S V X `</span>
+				<button class="badge bg-primary" 
+						type="button" 
+						data-bs-toggle="collapse" 
+						data-bs-target="#ex2_answer" 
+						aria-collapsed="true" 
+						aria-controls="ex2_answer"
+						id="ex2_toggle_btn">
+						Show Answers
+				</button>
+			</p>
+			<p>/o/ /p/ /z/ /s/ /n/ /ɸ/ /ŋ/ /ʔ/ /ɲ/ /β/ /c/ /ʁ/</p>
+			<p id="ex2_answer" class="collapse no-indentation">
+				C: /s/ F: /ɸ/ N: /n/ Ņ: /ŋ/ <br> 
+				Ñ: /ɲ/ O: /o/ P: /p/ S: /s/ <br>
+				V: /β/ X: /ʁ/ `: /ʔ/
+			</p>
+		</div>
+    </div>
+	
+	<div class="buttons-section">
+		<div class="row g-3">
+			<div class="col-lg col-md-6 col-12">
+				<a href="index.html">
+					<button class="action-button"><i class="bi bi-arrow-return-left"></i> Return to Introductory Page</button>
+				</a>
+			</div>
+			<div class="col-lg col-md-6 col-12">
+				<a href="part2.html">
+					<button class="action-button">Part 2: Compound letters <i class="bi bi-arrow-right"></i></button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts -->
+	<script src="../../common/audio_play_button.js"></script>
+    <script src="../../common/navigation.js"></script>
+	<script src="table.js"></script>
+
+</body>
+</html>

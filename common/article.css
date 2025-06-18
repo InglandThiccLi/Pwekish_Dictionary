@@ -74,12 +74,33 @@
 	padding: 0px;
 }
 
+/* Fun fact */
+.fun-fact-container {
+    padding-bottom: 1.5rem;
+}
+
+.fun-fact {
+    width: 50%;
+    justify-self: center;
+}
+
+
+/* Special */
+.no-indentation {
+	text-indent: 0px !important; 
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
 	.article-passage > p {
 		text-indent: 0px;
 		font-size: 20px;
 	}
+
+    .fun-fact {
+        width: 80%;
+    }
 }
 
 /* Dark mode support */
@@ -94,5 +115,13 @@
 
     .article-passage > h3 {
         text-shadow: 2px 2px 2px black;
+    }
+
+    .card-title {
+        color: white;
+    }
+
+    .card-text {
+        color: #eee;
     }
 }
