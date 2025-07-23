@@ -39,6 +39,10 @@ $(document).ready(function() {
 						<i class="bi bi-bookmark"></i>
 						<span>Chapter 1</span>
 					</a>
+					<a href="${go_back}learn/chapter2/index.html" class="accordion-item">
+						<i class="bi bi-bookmark"></i>
+						<span>Chapter 2</span>
+					</a>
 				</div>
 			</div>
 			<a href="${go_back}books/home.html" class="nav-item hidden">

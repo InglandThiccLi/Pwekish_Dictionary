@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Pwekish - Chapter 2</title>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="../../common/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Styles -->
+	<link href="../../common/style.css" rel="stylesheet">
+	<link href="../../common/navigation.css" rel="stylesheet">
+	<link href="../../common/article.css" rel="stylesheet">
+	<link href="../../common/table.css" rel="stylesheet">
+	<link href="../../common/audio_play_button.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Background image -->
+    <div class="background-image"></div>
+
+    <!-- Title -->
+    <div class="page-title row">
+        <div class="col-12 text-center">
+            <h1 class="page-title-text">Part 1: The 3 Letters Law</h1>
+        </div>
+    </div>
+
+    <!-- Overlay for dimming -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Menu button -->
+    <button id="menuBtn" class="menu-btn">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <!-- Side navigation -->
+    <nav id="sideNav" class="side-nav deep"></nav>
+
+    <hr>
+
+	<!--Main content-->
+    <div class="article-container">
+		<div class="article-passage">
+            <h3>A Simple Example</h3>
+			<p>
+				Let's talk about how 3 Letters Law works. We take the letter group "p, b, m" for demonstration.
+			</p>
+			<p>
+				For words start with p, let's take "pe" /pe/ 
+				<button class="audio-play-btn" data-src="../../audio/words/pe.mp3"><i class="bi bi-play-fill"></i></button>
+				(to be) as an example. 
+				If the subject is first person (I and we), as we mentioned before, no conjugation is applied, so it remains "pe" /pe/
+				<button class="audio-play-btn" data-src="../../audio/PVIM/pe/pe.mp3"><i class="bi bi-play-fill"></i></button>.
+				But if the subject is second person (you), it becomes "hpe", pronounced as /be/
+				<button class="audio-play-btn" data-src="../../audio/PVIM/pe/be.mp3"><i class="bi bi-play-fill"></i></button>.
+				If the subject is third person (he, she, it, they), it becomes "npe", pronounced as /me/
+				<button class="audio-play-btn" data-src="../../audio/PVIM/pe/me.mp3"><i class="bi bi-play-fill"></i></button>.
+			</p>
+			<p>
+				Look carefully at the pronunciation of these words, have you noticed the pattern on how the consonant changes?
+			</p>
+			<p class="text-center">
+				/pe/ -> /be/ -> /me/
+			</p>
+			<p>
+				That's right, we can observe that they are all in the letter group "p, b, m". The changes is p (1st person) -> b (2nd person) -> m (3rd person).
+			</p>
+			<p>
+				This conjunction rule applies for all words starts with letter "p".
+			</p>
+		</div>
+        <div class="article-passage">
+            <h3>Adding the Pronunciation Alteration Prefixes</h3>
+			<p>
+				Once we know this change pattern, we can easily predict the pronunciation for the words that undergo PVIM. 
+				To spell it out, we just add the prefixes "-h", "h-" or "n-" to the first letter of the word to change its pronunciation. 
+				For words start with letter "p", we just need the voiced marker "h-" and nasal marker "n-" 
+				as we want to alter it's pronunciation to /b/ for 2nd person mutation and /m/ for 3rd person respectively.
+			</p>
+			<p>
+				Then, you may have a question: instead of writing "pe", "hpe", "npe", why don't we just write "pe", "be", "me"? 
+				The reason is we would like to preserve the original word even after applying PVIM. 
+				This is to prevent confusion in reading as there can be cases that a conjugated word looks the same to an unconjugated word 
+				if we don't use a marker for the pronunciation change.
+			</p>
+			<p>
+				One more thing to mention: <b>"h-" and "n-" are never captalized.</b> For example, we write "hPe" instead of "Hpe".
+			</p>
+        </div>
+		<div class="article-passage">
+			<h3>More Examples</h3>
+			<p>
+				What about words starting with "b" and "m"? 
+				Since we know they are all in the letter group "p, b, m", the way of conjugation would be similar to the words starting with "p". 
+				Let's take "bay" (to see) and "mor" (to go) as examples.
+			</p>
+			<div>
+				<div class="table-responsive">
+					<table class="table table-hover mb-4">
+						<thead>
+							<tr>
+								<th class="table-header"></th>
+								<th class="table-header">1st Person</th>
+								<th class="table-header">2nd Person</th>
+								<th class="table-header">3rd Person</th>
+							</tr>
+						</thead>
+						<tbody>
+							<th class="table-header" class="text-center" rowspan="2">to see</th>
+							<tr>
+								<td class="text-center">bay /baj/ <button class="audio-play-btn" data-src="../../audio/PVIM/bay/bay.mp3"><i class="bi bi-play-fill"></i></button></td>
+								<td class="text-center">nbay /maj/ <button class="audio-play-btn" data-src="../../audio/PVIM/bay/may.mp3"><i class="bi bi-play-fill"></i></button></td>
+								<td class="text-center">bhay /paj/ <button class="audio-play-btn" data-src="../../audio/PVIM/bay/pay.mp3"><i class="bi bi-play-fill"></i></button></td>
+							</tr>
+							<th class="table-header" class="text-center" rowspan="2">to go</th>
+							<tr>
+								<td class="text-center">mor /mor/ <button class="audio-play-btn" data-src="../../audio/PVIM/mor/mor.mp3"><i class="bi bi-play-fill"></i></button></td>
+								<td class="text-center">mhor /por/ <button class="audio-play-btn" data-src="../../audio/PVIM/mor/por.mp3"><i class="bi bi-play-fill"></i></button></td>
+								<td class="text-center">hmor /bor/ <button class="audio-play-btn" data-src="../../audio/PVIM/mor/bor.mp3"><i class="bi bi-play-fill"></i></button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<p>
+				The changes of the first consonant are like following:
+			</p>
+			<p class="text-center">
+				bay: /b/ -> /m/ -> /p/
+			</p>
+			<p class="text-center">
+				mor: /m/ -> /p/ -> /b/
+			</p>
+			<p>
+				It is just a shift with rotation in the letter group "p, b, m".
+			</p>
+			<ul class="article-left-list">
+				<li>
+					For 1st person mutation, the shift amount is 0, so it remains the same letter. 
+				</li>
+				<li>
+					For 2nd person mutation, the shift amount is 1, so "p" shifts to "b", "b" shifts to "m" and "m" goes back to "p".
+				</li>
+				<li>
+					For 3rd person mutation, the shift amount is 2, so "p" shifts to "m", "b" goes back to "p" and "m" goes back to "b".
+				</li>
+			</ul>
+		</div>
+		<div class="article-passage">
+			<h3>Summary</h3>
+			<p>The whole process of PVIM can be summarized into these steps:</p>
+			<ol class="article-left-list">
+				<li>
+					Determine the letter group by looking at the first letter. ("bay" is in group "p, b, m")
+				</li>
+				<li>
+					Get the shift amount base on the person. (We want to do 3rd person mutation, so shift amount is 2)
+				</li>
+				<li>
+					Shift the first letter with rotation to get the pronunciation. ("b" -> "m" -> "p", so the pronunciation is /p/)
+				</li>
+				<li>
+					Apply the pronunciation alteration marker to the first based on the type of resulting pronunciation. (/p/ is voiceless consonant, so we use "-h" and get "bhay")
+				</li>
+			</ol>
+			<p>So now, you should be able to say "He sees me!" in Pwekish. (Nrow ņra bhay!)</p>
+		</div>
+
+		<hr>
+		
+		<div class="article-passage">
+			<h3>Example Sentences</h3>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#sentence_table_collapse" 
+							aria-expanded="true" 
+							aria-controls="sentence_table_collapse"
+							id="noun_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold" id="sentence_table_title">Click to show the table</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="sentence_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse" id="sentence_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header">Sentence</th>
+									<th class="table-header">Meaning</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>Ņtyu awú nbay.</strong></td>
+									<td><span class="meaning">You see a dog.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ntyus dorn mhor.</strong></td>
+									<td><span class="meaning">You guys go home.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Nrow baln bhal.</strong></td>
+									<td><span class="meaning">He reads a book.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Awú sewu bhay.</strong></td>
+									<td><span class="meaning">The dog sees a fish.</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+		
+		<div class="article-passage">
+			<h3>Exercise</h3>
+			<p class="no-indentation">
+				1. Write down the 2nd person and the 3rd person mutations of the following words.
+			</p>
+			<p class="no-indentation">
+				<span class="me-3">i. pe ii. bay iii. mor</span>
+				<br>
+				<span class="me-3">iv. masul v. parím vi. morgra</span>
+				<br>
+				<span class="me-3">vii. basa viii. powo ix. bentleb</span>
+				<br><br>
+				<button class="badge bg-primary" 
+						type="button" 
+						data-bs-toggle="collapse" 
+						data-bs-target="#ex1_answer" 
+						aria-collapsed="true" 
+						aria-controls="ex1_answer"
+						id="ex1_toggle_btn">
+						Show Answers
+				</button>
+			</p>
+			<p id="ex1_answer" class="collapse no-indentation">
+				i. hpe npe<br>
+				ii. nbay bhay<br>
+				iii. mhor hmor<br>
+				iv. mhasul hmasul<br>
+				v. hparím nparím<br>
+				vi. mhorgra hmorgra<br>
+				vii. nbasa bhasa<br>
+				viii. hpowo npowo<br>
+				ix. nbentleb bhentleb
+			</p>
+
+			<br>
+
+			<p class="no-indentation">
+				2. Translate the following sentences into English.
+			</p>
+			<p class="no-indentation">
+				i. Ņos masul.<br>
+				ii. Ntyus nur hpe.<br>
+				iii. Awú ņra bhay.<br><br>
+				<button class="badge bg-primary" 
+					type="button" 
+					data-bs-toggle="collapse" 
+					data-bs-target="#ex2_answer" 
+					aria-collapsed="true" 
+					aria-controls="ex2_answer"
+					id="ex2_toggle_btn">
+					Show Answers
+				</button>
+			</p>
+			<p id="ex2_answer" class="collapse no-indentation">
+				i. We sleep.<br>
+				ii. You (all) are humans.<br>
+				iii. The dog sees me.
+			</p>
+
+			<br>
+
+			<p class="no-indentation">
+				3. Translate the following sentences into Pwekish.
+			</p>
+			<p class="no-indentation">
+				i. You are a human.<br>
+				ii. They sleep.<br>
+				iii. My mum sees me.<br>
+				iv. We go home.<br>
+				v. You read a book.<br><br>
+				<button class="badge bg-primary" 
+					type="button" 
+					data-bs-toggle="collapse" 
+					data-bs-target="#ex3_answer" 
+					aria-collapsed="true" 
+					aria-controls="ex3_answer"
+					id="ex3_toggle_btn">
+					Show Answers
+				</button>
+			</p>
+			<p id="ex3_answer" class="collapse no-indentation">
+				i. Ntyu nur hpe.<br>
+				ii. Nrows hmasul.<br>
+				iii. Má ņra bhay.<br>
+				iv. Ņris/Ņos dorn mor.<br>
+				v. Ntyu(s) baln nbal.
+			</p>
+		</div>
+    </div>
+	
+	<div class="buttons-section">
+		<div class="row g-3">
+			<div class="col-lg col-md-6 col-12">
+				<a href="index.html">
+					<button class="action-button"><i class="bi bi-arrow-return-left"></i> Return to Introductory Page</button>
+				</a>
+			</div>
+			<div class="col-lg col-md-6 col-12">
+				<a href="part2.html">
+					<button class="action-button">Part 2: Regular Letter Groups <i class="bi bi-arrow-right"></i></button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts -->
+	<script src="../../common/audio_play_button.js"></script>
+    <script src="../../common/navigation.js"></script>
+	<script src="part1.js"></script>
+
+</body>
+</html>
