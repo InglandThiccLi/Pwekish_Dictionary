@@ -15,7 +15,9 @@ https://inglopedia.fandom.com/wiki/Inglopedia_Wiki
 - Other features will be available soon.
 
 ## Updates
-- v1.4 (2025-07-xx):
+- v1.4.1 (2025-07-23):
+	1. Refine texts.
+- v1.4 (2025-07-23):
 	1. Add learning material for Chapter 2.
 	2. Fix typo and missing information in Chapter 1 and "more info".
 - v1.3 (2025-06-18):
