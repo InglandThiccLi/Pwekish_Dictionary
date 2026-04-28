@@ -17,10 +17,15 @@ https://inglopedia.fandom.com/wiki/Inglopedia_Wiki
 - More features in future updates.
 
 ## Updates
+- v1.5 (2026-04-28):
+	1. Add learning material for Chapter 3.
+	2. Add vocabulary list.
+	3. Side navigation is now scrollable.
+	4. Refine texts and fix typos.
 - v1.4.1 (2025-07-23): Refine texts.
 - v1.4 (2025-07-23):
 	1. Add learning material for Chapter 2.
-	2. Fix typo and missing information in Chapter 1 and "more info".
+	2. Fix typos and missing information in Chapter 1 and "more info".
 - v1.3 (2025-06-18):
 	1. Add Pwekish Learning Portal and learning material for Chapter 1.
 	2. Add accordion for "learn" section in the side navigation.

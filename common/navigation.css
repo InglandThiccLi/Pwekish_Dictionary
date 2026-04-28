@@ -91,8 +91,10 @@
 }
 
 .side-nav-content {
+	overflow: auto;
     flex: 1;
     padding: 20px 0;
+	scrollbar-width: thin;
 }
 
 .nav-item {
@@ -253,6 +255,10 @@
         background-color: #333;
         color: #7a79e0;
     }
+	
+	.side-nav-content {
+	    scrollbar-color: #e0e0e0 #2a2a2a;
+	}
 	
 	 .accordion-toggle:hover {
         background-color: rgba(255, 255, 255, 0.1);

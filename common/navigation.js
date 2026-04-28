@@ -35,6 +35,10 @@ $(document).ready(function() {
 						<i class="bi bi-geo"></i>
 						<span>Portal</span>
 					</a>
+					<a href="${go_back}learn/vocabularies.html" class="accordion-item">
+						<i class="bi bi-alphabet"></i>
+						<span>Vocabulary List</span>
+					</a>
 					<a href="${go_back}learn/chapter1/index.html" class="accordion-item">
 						<i class="bi bi-bookmark"></i>
 						<span>Chapter 1</span>
@@ -42,6 +46,10 @@ $(document).ready(function() {
 					<a href="${go_back}learn/chapter2/index.html" class="accordion-item">
 						<i class="bi bi-bookmark"></i>
 						<span>Chapter 2</span>
+					</a>
+					<a href="${go_back}learn/chapter3/index.html" class="accordion-item">
+						<i class="bi bi-bookmark"></i>
+						<span>Chapter 3</span>
 					</a>
 				</div>
 			</div>

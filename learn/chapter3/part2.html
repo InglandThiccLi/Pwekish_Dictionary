@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Pwekish - Chapter 3</title>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="../../common/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Styles -->
+	<link href="../../common/style.css" rel="stylesheet">
+	<link href="../../common/navigation.css" rel="stylesheet">
+	<link href="../../common/article.css" rel="stylesheet">
+	<link href="../../common/table.css" rel="stylesheet">
+	<link href="../../common/audio_play_button.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Background image -->
+    <div class="background-image"></div>
+
+    <!-- Title -->
+    <div class="page-title row">
+        <div class="col-12 text-center">
+            <h1 class="page-title-text">Part 2: Adjectives and Adverbs</h1>
+        </div>
+    </div>
+
+    <!-- Overlay for dimming -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Menu button -->
+    <button id="menuBtn" class="menu-btn">
+        <i class="bi bi-list"></i>
+    </button>
+
+    <!-- Side navigation -->
+    <nav id="sideNav" class="side-nav deep"></nav>
+
+    <hr>
+
+	<!--Main content-->
+    <div class="article-container">
+		<div class="article-passage">
+            <h3>Adjectives</h3>
+			<p>
+				Adjectives describe the attributes or characteristics of an object. 
+				In English, we have words like "small", "big", "beautiful", and "amazing". They are all adjectives. 
+				Pwekish have the same type of words, and they play a crucial role in forming a detailed sentence. 
+			</p>
+			<p>
+				There are two types of adjectives in Pwekish: the adjective root and the adjectivized word. 
+			</p>
+		</div>
+		
+		<div class="article-passage">
+			<h3>Adjective root</h3>
+			<p>
+				Adjective roots are words being an adjective on their own. 
+				They may or may not end with the letter "e". 
+				Below is a table showcasing a few common adjective roots.
+			</p>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#adjective_root_table_collapse" 
+							aria-expanded="true" 
+							aria-controls="adjective_root_table_collapse"
+							id="adjective_root_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold" id="adjective_root_table_title">Click to show the adjective root table</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="adjective_root_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse" id="adjective_root_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header">Word</th>
+									<th class="table-header">Pronunciation</th>
+									<th class="table-header">Meaning</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>sil</strong></td>
+									<td class="text-center"><span class="pronunciation">/sil/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/sil.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">big</span></td>
+								</tr>
+								<tr>
+									<td><strong>rin</strong></td>
+									<td class="text-center"><span class="pronunciation">/rin/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/rin.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">small</span></td>
+								</tr>
+								<tr>
+									<td><strong>pres</strong></td>
+									<td class="text-center"><span class="pronunciation">/pres/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/pres.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">many</span></td>
+								</tr>
+								<tr>
+									<td><strong>masnusa</strong></td>
+									<td class="text-center"><span class="pronunciation">/masˈnusa/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/masnusa.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">tired</span></td>
+								</tr>
+								<tr>
+									<td><strong>dipnusa</strong></td>
+									<td class="text-center"><span class="pronunciation">/dipˈnusa/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/dipnusa.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">hungry</span></td>
+								</tr>
+								<tr>
+									<td><strong>mlo</strong></td>
+									<td class="text-center"><span class="pronunciation">/m̩ˈlo/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/mlo.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">beautiful</span></td>
+								</tr>
+								<tr>
+									<td><strong>ine</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈine/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/ine.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">cool</span></td>
+								</tr>
+								<tr>
+									<td><strong>fi</strong></td>
+									<td class="text-center"><span class="pronunciation">/ɸi/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/fi.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">hot</span></td>
+								</tr>
+								<tr>
+									<td><strong>peke</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈpeke/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/peke.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">good</span></td>
+								</tr>
+								<tr>
+									<td><strong>wallu</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈwaʎu/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/wallu.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">bad</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="article-passage">
+			<h3>Adjectivized word</h3>
+			<p>
+				Adjectivized words are words being modified to an adjective with the adjectivizer "-e". 
+				They all end with the letter "e". 
+				Below is a table showcasing a few common adjectivized words.
+			</p>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#adjectivized_word_table_collapse" 
+							aria-expanded="true" 
+							aria-controls="adjectivized_word_table_collapse"
+							id="adjectivized_word_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold" id="adjectivized_word_table_title">Click to show the adjectivized word table</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="adjectivized_word_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse" id="adjectivized_word_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header">Word</th>
+									<th class="table-header">Pronunciation</th>
+									<th class="table-header">Meaning</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>adie</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈadi̯e/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/adie.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">more</span></td>
+								</tr>
+								<tr>
+									<td><strong>runie</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈruni̯e/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/runie.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">few</span></td>
+								</tr>
+								<tr>
+									<td><strong>ayae</strong></td>
+									<td class="text-center"><span class="pronunciation">/aˈjɛ/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/ayae.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">difficult</span></td>
+								</tr>
+								<tr>
+									<td><strong>dəkbite</strong></td>
+									<td class="text-center"><span class="pronunciation">/dəkˈbite/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/dəkbite.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">special</span></td>
+								</tr>
+								<tr>
+									<td><strong>esoke</strong></td>
+									<td class="text-center"><span class="pronunciation">/eˈsoke/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/esoke.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">fragrant; aromatic</span></td>
+								</tr>
+								<tr>
+									<td><strong>orlee</strong></td>
+									<td class="text-center"><span class="pronunciation">/oˈɬeː/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/orlee.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">clean</span></td>
+								</tr>
+								<tr>
+									<td><strong>hwinke</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈhʷinke/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/hwinke.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">happy; pleased</span></td>
+								</tr>
+								<tr>
+									<td><strong>udae</strong></td>
+									<td class="text-center"><span class="pronunciation">/uˈdɛ/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/udae.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">helpful</span></td>
+								</tr>
+								<tr>
+									<td><strong>nue</strong></td>
+									<td class="text-center"><span class="pronunciation">/ny/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/nue.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">female</span></td>
+								</tr>
+								<tr>
+									<td><strong>yee</strong></td>
+									<td class="text-center"><span class="pronunciation">/jeː/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/yee.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">male</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+		<hr>
+		
+		<div class="article-passage">
+            <h3>Using Adjective Attributively</h3>
+			<p>
+				In Pwekish, we put the adjective after a noun and we add an adjectivizer "-e" to adjective roots.
+			</p>
+			<p>
+				For example, "big apple" is "bimbo sile". 
+				As you see, the adjective root "sil" has an "-e" at the end and it is put after the noun "bimbo". 
+				So, translating word by word, it is "apple big" instead of "big apple".
+			</p>
+			<p>
+				Even if the adjective root ends with "e", we still add the "-e" suffix. 
+				Like "cool water" is "xe inee". 
+				The stress will shift to the last syllable, and the "e" will become a long vowel.
+			</p>
+			<p>
+				We <b>do not</b> add "-e" to adjectivized words. Like "helpful person" is "nur udae" instead of "nur udaee".
+			</p>
+        </div>
+		
+		<div class="article-passage">
+			<h3>Example Sentences</h3>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#sentence1_table_collapse" 
+							aria-expanded="true" 
+							aria-controls="sentence1_table_collapse"
+							id="sentence1_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold" id="sentence1_table_title">Click to show the sentence table</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="sentence1_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse" id="sentence1_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header">Sentence</th>
+									<th class="table-header">Meaning</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>Ņra yenmor sile nuke.</strong></td>
+									<td><span class="meaning">I like big cars.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ntyu gale fie ndip.</strong></td>
+									<td><span class="meaning">You eat hot meat.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Nrow sukdi ayae nye.</strong></td>
+									<td><span class="meaning">He does difficult homework.</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+			<p class="mt-2">
+				The adjective is used in attributive form for such cases. 
+				Adjectives in Pwekish can also be used in predictive form, as shown in the next section.
+			</p>
+		</div>
+		
+		<hr>
+		
+		<div class="article-passage">
+            <h3>Predictive Form</h3>
+			<p>
+				Adjectives in Pwekish can be used as verbs in the form of "to be (adjective)" together with PVIM. 
+				For example, "He is helpful." is "Nrow hhudae.". 
+				When adjectives are used as verbs, we do not add the adjectivizer "-e".
+			</p>
+			
+			<div class="container-fluid fun-fact-container">
+				<div class="card h-100 shadow-sm fun-fact">
+					<div class="card-body">
+						<h5 class="card-title">Fun Fact:</h5>
+						<p class="card-text">
+							Of course, we can use the coupler "pe" (to be) and form a sentence like "Nrow nur udae npe" (He is a helpful person.). 
+							But Pwekish tends to use simpler sentences, and the coupler is often used to link nouns together 
+							(sentences like "something is something"). So, usually we just say "Nrow hhudae".
+						</p>
+					</div>
+				</div>
+			</div>
+        </div>
+		
+		<div class="article-passage">
+			<h3>Adjective Chain</h3>
+			<p>
+				When multiple adjectives are used, we just chain them in opposite direction as English for attributive form, 
+				and same direction as English for predictive form, 
+				like "Many good foods are hot and fragrant" is "Pdipn peke prese nfi hhesoke".
+			</p>
+		</div>
+		
+		<div class="article-passage">
+			<h3>Example Sentences</h3>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#sentence2_table_collapse" 
+							aria-expanded="true" 
+							aria-controls="sentence2_table_collapse"
+							id="sentence2_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold" id="sentence2_table_title">Click to show the sentence table</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="sentence2_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse" id="sentence2_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header">Sentence</th>
+									<th class="table-header">Meaning</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>Ņra masnusa.</strong></td>
+									<td><span class="meaning">I am tired.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ntyu ndəkbite.</strong></td>
+									<td><span class="meaning">You are special.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Tyep rine hmlo.</strong></td>
+									<td><span class="meaning">The small bird is beautiful.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Xe orlee npeke.</strong></td>
+									<td><span class="meaning">Clean water is good.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Ņra tyep sile dipnusae runie sano.</strong></td>
+									<td><span class="meaning">I have a few hungry big birds.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Nrows npeke hhudae.</strong></td>
+									<td><span class="meaning">They are good and helpful.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Teibəl mloe rine prese npeke dhəkbite.</strong></td>
+									<td><span class="meaning">Many small and beautiful tables are good and special.</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<hr>
+
+		<div class="article-passage">
+			<h3>Possessive Adjectives and Pronouns</h3>
+			<p>
+				Possessive adjectives are adjectives derived from pronouns to describe the owner of a matter. 
+				In English, words like "my", "your" and "its" are all possessive adjectives. 
+				While possessive pronouns indicate ownership or possession and replace nouns or noun phrases. 
+				Words like "mine", "yours" and "theirs" are all possessive pronouns.
+			</p>
+			<p>
+				In Pwekish possessive adjectives and possessive pronoun are both formed by adding the adjectivizer "-e" to a pronoun, 
+				which makes them the same. The only difference is whether they are used in attributive form or predictive form. 
+				When used in attributive form, they are possessive adjectives. 
+				On the other hand, when used in predictive form, they are possessive pronouns.
+			</p>
+			<p>The table below summarizes all the possessive adjectives in Pwekish.</p>
+			<div id="noun_table_collapse">
+				<div class="table-responsive">
+					<table class="table table-hover mb-0">
+						<thead>
+							<tr>
+								<th class="table-header"></th>
+								<th class="table-header">Word</th>
+								<th class="table-header">Pronunciation</th>
+								<th class="table-header">Meaning</th>
+							</tr>
+						</thead>
+						<tbody>
+							<th class="table-header" class="text-center" rowspan="4">First Person</th>
+							<tr>
+								<td class="text-center"><strong>ņrae</strong></td>
+								<td class="text-center"><span class="pronunciation">/ŋrɛ/</span>
+									<button class="audio-play-btn" data-src="../../audio/words/ņrae.mp3">
+										<i class="bi bi-play-fill"></i>
+									</button>
+								</td>
+								<td><span class="meaning">my; mine</span></td>
+							</tr>
+							<tr>
+								<td class="text-center"><strong>ņrise</strong></td>
+								<td class="text-center"><span class="pronunciation">/ˈŋrise/</span>
+									<button class="audio-play-btn" data-src="../../audio/words/ņrise.mp3">
+										<i class="bi bi-play-fill"></i>
+									</button>
+								</td>
+								<td><span class="meaning">our; ours (including the listener)</span></td>
+							</tr>
+							<tr>
+								<td class="text-center"><strong>ņose</strong></td>
+								<td class="text-center"><span class="pronunciation">/ˈŋose/</span>
+									<button class="audio-play-btn" data-src="../../audio/words/ņose.mp3">
+										<i class="bi bi-play-fill"></i>
+									</button>
+								</td>
+								<td><span class="meaning">our; ours (excluding the listener)</span></td>
+							</tr>
+							<th class="table-header" class="text-center" rowspan="3">Second Person</th>
+							<tr>
+								
+								<td class="text-center"><strong>ntyue</strong></td>
+								<td class="text-center"><span class="pronunciation">/n̩ˈtɕy/</span>
+									<button class="audio-play-btn" data-src="../../audio/words/ntyue.mp3">
+										<i class="bi bi-play-fill"></i>
+									</button>
+								</td>
+								<td><span class="meaning">your; yours (singular)</span></td>
+							</tr>
+							<tr>
+								<td class="text-center"><strong>ntyuse</strong></td>
+								<td class="text-center"><span class="pronunciation">/n̩ˈtɕuse/</span>
+									<button class="audio-play-btn" data-src="../../audio/words/ntyuse.mp3">
+										<i class="bi bi-play-fill"></i>
+									</button>
+								</td>
+								<td><span class="meaning">your; yours (plural)</span></td>
+							</tr>
+							<th class="table-header" class="text-center" rowspan="3">Third Person</th>
+							<tr>
+								
+								<td class="text-center"><strong>nrowe</strong></td>
+								<td class="text-center"><span class="pronunciation">/ˈnrowe/</span>
+									<button class="audio-play-btn" data-src="../../audio/words/nrowe.mp3">
+										<i class="bi bi-play-fill"></i>
+									</button>
+								</td>
+								<td><span class="meaning">his, her, its; his, hers, its</span></td>
+							</tr>
+							<tr>
+								<td class="text-center"><strong>nrowse</strong></td>
+								<td class="text-center"><span class="pronunciation">/ˈnrowse/</span>
+									<button class="audio-play-btn" data-src="../../audio/words/nrowse.mp3">
+										<i class="bi bi-play-fill"></i>
+									</button>
+								</td>
+								<td><span class="meaning">their; theirs</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="article-passage">
+			<h3>Example Sentences</h3>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#sentence3_table_collapse" 
+							aria-expanded="true" 
+							aria-controls="sentence3_table_collapse"
+							id="sentence3_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold" id="sentence3_table_title">Click to show the sentence table</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="sentence3_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse" id="sentence3_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header">Sentence</th>
+									<th class="table-header">Meaning</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>Yenmor ņrae nsil.</strong></td>
+									<td><span class="meaning">My car is big.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Maw nrowe dhipnusa.</strong></td>
+									<td><span class="meaning">Her cat is hungry.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Awú nrowse nrow h'wipteptep.</strong></td>
+									<td><span class="meaning">Their dog chases him.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Vurún rine runie pdipn ņrae dhip.</strong></td>
+									<td><span class="meaning">A few small mice eat my food.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Dorn hņrise.</strong></td>
+									<td><span class="meaning">The house is ours.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Nrow hņrae.</strong></td>
+									<td><span class="meaning">It's mine.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Bimbo prese hnrowse.</strong></td>
+									<td><span class="meaning">Many apples are theirs.</span></td>
+								</tr>
+								<tr>
+									<td><strong>Sewu sile ņrae hntyue.</strong></td>
+									<td><span class="meaning">My big fish is yours.</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<p class="mt-2">
+				Notice: possessive adjectives are put after all adjectives. (Like "sewu sile ņrae" is "fish big my")
+			</p>
+		</div>
+
+		<hr>
+		
+		<div class="article-passage">
+			<h3>Adverbs of Manner</h3>
+			<p>
+				In this chapter, we will only focus on adverbs that describe the manner of an action. 
+				These adverbs are used like adjectives in attributive form, 
+				where the only difference is they are put after a verb instead of a noun. 
+				In fact, some adjectives we have learnt can be used as an adverb directly. 
+			</p>
+			<p>
+				For example, "The cat hungrily eat the fish." is translated to "Maw sewu dhip dipnusae." 
+				In this example, "dipnusae" is the adverb "hungrily", and we can see it is placed after the verb "dhip".
+			</p>
+			<p>
+				Below is a table showcasing a few adverbs of manner.
+			</p>
+			<div class="card border-3">
+				<div class="card-header bg-transparent border-0 p-0">
+					<button class="btn btn-link w-100 text-start p-3 text-decoration-none" 
+							type="button" 
+							data-bs-toggle="collapse" 
+							data-bs-target="#adverb_table_collapse" 
+							aria-expanded="true" 
+							aria-controls="adverb_table_collapse"
+							id="adverb_table_toggle_btn">
+						<div class="d-flex justify-content-between align-items-center">
+							<h4 class="mb-0 collapsible-table-btn-text fw-bold" id="adverb_table_title">Click to show the adverb table</h4>
+							<i class="bi bi-chevron-down collapsible-table-btn-icon" id="adverb_table_toggle_icon"></i>
+						</div>
+					</button>
+				</div>
+				<div class="collapse" id="adverb_table_collapse">
+					<div class="table-responsive">
+						<table class="table table-hover mb-0">
+							<thead>
+								<tr>
+									<th class="table-header">Word</th>
+									<th class="table-header">Pronunciation</th>
+									<th class="table-header">Meaning</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><strong>dipnusae</strong></td>
+									<td class="text-center"><span class="pronunciation">/dipˈnusɛ/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/dipnusae.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">hungrily</span></td>
+								</tr>
+								<tr>
+									<td><strong>masnusae</strong></td>
+									<td class="text-center"><span class="pronunciation">/masˈnusɛ/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/masnusae.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">tiredly</span></td>
+								</tr>
+								<tr>
+									<td><strong>hwinke</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈhʷinke/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/hwinke.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">happily</span></td>
+								</tr>
+								<tr>
+									<td><strong>fukusilpe</strong></td>
+									<td class="text-center"><span class="pronunciation">/ɸukuˈsilpe/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/fukusilpe.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">angrily</span></td>
+								</tr>
+								<tr>
+									<td><strong>tyere</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈtɕere/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/tyere.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">fastly, quickly</span></td>
+								</tr>
+								<tr>
+									<td><strong>mane</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈmane/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/mane.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">slowly</span></td>
+								</tr>
+								
+								<tr>
+									<td><strong>mloe</strong></td>
+									<td class="text-center"><span class="pronunciation">/m̩ˈlœ/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/mloe.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">beautifully</span></td>
+								</tr>
+								<tr>
+									<td><strong>pilansilpe</strong></td>
+									<td class="text-center"><span class="pronunciation">/pilanˈsilpe/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/pilansilpe.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">loudly</span></td>
+								</tr>
+								<tr>
+									<td><strong>pekee</strong></td>
+									<td class="text-center"><span class="pronunciation">/peˈkeː/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/pekee.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">well</span></td>
+								</tr>
+								<tr>
+									<td><strong>wallue</strong></td>
+									<td class="text-center"><span class="pronunciation">/ˈwaʎy/</span>
+										<button class="audio-play-btn" data-src="../../audio/words/wallue.mp3">
+											<i class="bi bi-play-fill"></i>
+										</button>
+									</td>
+									<td><span class="meaning">badly</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<hr>
+		
+		<div class="article-passage">
+			<h3>Exercise</h3>
+			<p class="no-indentation">
+				1. Translate the following sentences to English.
+			</p>
+			<p class="no-indentation">
+				<span class="me-3">a. Ņra awú sile sano.</span>
+				<br>
+				<span class="me-3">b. Má yesin peke yhe.</span>
+				<br>
+				<span class="me-3">c. Tyep nrowe hmasul.</span>
+				<br>
+				<span class="me-3">d. Sukdi ntyue hhayae.</span>
+				<br>
+				<span class="me-3">e. Nur mloe runie tolontenPwék ntolo.</span>
+				<br>
+				<span class="me-3">f. Baln dəkbite hņrae.</span>
+				<br>
+				<span class="me-3">g. Maw nue rine ņrae hntyue.</span>
+				<br>
+				<span class="me-3">h. Tyep nfop tyere.</span>
+				<br>
+				<span class="me-3">i. Awú ņrae dhip mane.</span>
+				<br>
+				<span class="me-3">j. Nrow sukdi nrowe nkutye fukusilpe.</span>
+			</p>
+			<button class="badge bg-primary mb-3" 
+					type="button" 
+					data-bs-toggle="collapse" 
+					data-bs-target="#ex1_answer" 
+					aria-collapsed="true" 
+					aria-controls="ex1_answer"
+					id="ex1_toggle_btn">
+					Show Answers
+			</button>
+			<p id="ex1_answer" class="collapse no-indentation">
+				a. I have a big dog.<br>
+				b. My mum does a good/great work/job.<br>
+				c. His/Her bird is tired.<br>
+				d. Your homework is hard/difficult.<br>
+				e. A few beautiful people speak Pwekish.<br>
+				f. The special book is mine.<br>
+				g. My small female cat is yours.<br>
+				h. The bird flies quickly.<br>
+				i. My dog eats slowly.<br>
+				j. He is doing his homework angrily.
+			</p>
+
+			<br>
+			
+			<p class="no-indentation">
+				2. Translate the following sentences to Pwekish.
+			</p>
+			<p class="no-indentation">
+				<span class="me-3">a. You have a fragrant plant.</span>
+				<br>
+				<span class="me-3">b. He wants more hot food.</span>
+				<br>
+				<span class="me-3">c. The water is clean and cool.</span>
+				<br>
+				<span class="me-3">d. I am happy.</span>
+				<br>
+				<span class="me-3">e. Their small car breaks.</span>
+				<br>
+				<span class="me-3">f. Nothing bad happens.</span>
+				<br>
+				<span class="me-3">g. Many big apples are mine.</span>
+				<br>
+				<span class="me-3">h. She swims tiredly.</span>
+				<br>
+				<span class="me-3">i. My dad works carefully.</span>
+				<br>
+				<span class="me-3">j. Many people talked loudly.</span>
+			</p>
+			<button class="badge bg-primary" 
+					type="button" 
+					data-bs-toggle="collapse" 
+					data-bs-target="#ex2_answer" 
+					aria-collapsed="true" 
+					aria-controls="ex2_answer"
+					id="ex2_toggle_btn">
+					Show Answers
+			</button>
+			<p id="ex2_answer" class="collapse no-indentation">
+				a. Ntyu dos esoke hsano.<br>
+				b. Nrow pdipn fie adie hnusa.<br>
+				c. Xe hhorlee hhine.<br>
+				d. Ņra hwinke (pe).<br>
+				e. Yenmor rine nrowse hhisma.<br>
+				f. Yúnə wallue ncirlo.<br>
+				g. Bimbo sile prese hņrae.<br>
+				h. Nrow xhepte masnusae.<br>
+				i. Pá yhesi formane.<br>
+				j. Nur prese nhwitlo pilansilpe.
+			</p>
+		</div>
+    </div>
+	
+	<div class="buttons-section">
+		<div class="row g-3">
+			<div class="col-lg col-md-6 col-12">
+				<a href="part1.html">
+					<button class="action-button"><i class="bi bi-arrow-left"></i> Part 1: Tenses</button>
+				</a>
+			</div>
+			<div class="col-lg col-md-6 col-12">
+				<a href="index.html">
+					<button class="action-button"><i class="bi bi-arrow-return-left"></i> Return to Introductory Page</button>
+				</a>
+			</div>
+			<div class="col-lg col-md-6 col-12">
+				<a href="part3.html">
+					<button class="action-button">Part 3: Gerunds and Nouns <i class="bi bi-arrow-right"></i></button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts -->
+	<script src="../../common/audio_play_button.js"></script>
+    <script src="../../common/navigation.js"></script>
+	<script src="part2.js"></script>
+
+</body>
+</html>
