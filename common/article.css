@@ -84,7 +84,6 @@
     justify-self: center;
 }
 
-
 /* Special */
 .no-indentation {
 	text-indent: 0px !important; 
@@ -106,7 +105,7 @@
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
     .background-image::after {
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.72);
     }
 
     .page-title {

@@ -12,17 +12,19 @@ https://inglopedia.fandom.com/wiki/Inglopedia_Wiki
 
 ## Features of the Dictionary
 - Search for words using the Pwekish term or its English meaning. (to enable search by meaning, please click the advanced search checkbox)
-- Learning Pwekish. (2 chapters available now!)
+- Learning Pwekish. (3 chapters available now!)
 - Information about the alphabet, affixes, idioms, and a periodic table in Pwekish!
+- Vocabulary list that records the words you've learnt in each chapter.
 - More features in future updates.
 
 ## Updates
+- v1.5.1 (2026-06-09): Refine texts, adjust UI and fix typos.
 - v1.5 (2026-04-28):
 	1. Add learning material for Chapter 3.
 	2. Add vocabulary list.
 	3. Side navigation is now scrollable.
 	4. Refine texts and fix typos.
-- v1.4.1 (2025-07-23): Refine texts.
+- v1.4.1 (2025-07-23): Refine texts and fix typos.
 - v1.4 (2025-07-23):
 	1. Add learning material for Chapter 2.
 	2. Fix typos and missing information in Chapter 1 and "more info".

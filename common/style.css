@@ -9,7 +9,7 @@
 
 body {
     padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Pwekish;
+    font-family: roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Pwekish;
 }
 
 @font-face {
@@ -79,7 +79,7 @@ body {
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #181818;
+        background-color: #151515;
         color: #e0e0e0;
     }
 	

@@ -1,7 +1,7 @@
 /* Basic */
 body {
     min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hidden {
@@ -266,7 +266,7 @@ body {
     }
 
     .background-image::after {
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.6);
     }
 	
 	.overlay-background {
