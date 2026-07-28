@@ -6,3 +6,5 @@ for %%x in (%extensions%) do (
 		ffmpeg -i "%%f" -af loudnorm=I=-14:TP=-1.0:LRA=11 "done\%%f"
 	)
 )
+
+pause

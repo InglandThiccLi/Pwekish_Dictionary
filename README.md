@@ -18,6 +18,7 @@ https://inglopedia.fandom.com/wiki/Inglopedia_Wiki
 - More features in future updates.
 
 ## Updates
+- v1.5.2 (2026-07-28): Add pronunciation for affixes and fix pronunciation of some words.
 - v1.5.1 (2026-06-09): Refine texts, adjust UI and fix typos.
 - v1.5 (2026-04-28):
 	1. Add learning material for Chapter 3.
